@@ -1,0 +1,31 @@
+\documentclass{article}
+
+\title{Follow the money: Recruiting behavior and the enrollment priorities of public research universities}
+\date{2019}
+\author{Third Way}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\maketitle
+
+\newpage
+
+\section*{Introduction}
+
+\section*{Background}
+\subsection*{Enrollment Management}
+\subsection*{Off-Campus Recruiting}
+
+\section*{Research and Findings}
+\subsection*{Data and Methods}
+\subsection*{Results}
+\subsubsection*{Overall Patterns}
+\subsubsection*{Income}
+\subsubsection*{Race}
+
+\section*{Policy Implications}
+
+\section*{Conclusion}
+
+\end{document}
