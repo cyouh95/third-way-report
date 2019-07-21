@@ -364,8 +364,8 @@ third_way_map <- function(univs, metros) {
                toggleDisplay = TRUE) %>%
     
     addEasyButton(easyButton(
-      icon="fa-crosshairs", title="Zoom to National View",
-      onClick=JS("function(btn, map){ $('.custom-control').slideUp(); map.setView([39.828,-98.580], 4); }"))) %>%
+      icon="fa-crosshairs", title="Toggle View",
+      onClick=JS("function(btn, map){ let zoom = $(btn.button).attr('data-national'); $('.custom-control').slideUp(); if (zoom === 'true') { let $sel = $('input[name=\"metro-choice\"]:checked'); map.setView([$sel.attr('data-lat'), $sel.attr('data-lng')], 8.2); $(btn.button).attr('data-national', false); $('#view-btn').html('National View'); } else { map.setView([39.828, -98.580], 4); $(btn.button).attr('data-national', true); $('#view-btn').html('MSA View'); }}"))) %>%
     
     addEasyButton(easyButton(
       icon="fa-globe", title="Select Metro Area",
@@ -483,9 +483,9 @@ third_way_map <- function(univs, metros) {
     hideGroup("Non-Visited Public High Schools") %>%
     hideGroup("Non-Visited Private High Schools") %>%
     hideGroup("Non-Visited Community Colleges") %>%
-    hideGroup("Median Household Income") %>%
-    hideGroup("Population Total") %>%
-    hideGroup("Race/Ethnicity") %>%
+    hideGroup("MSA by Median Household Income") %>%
+    hideGroup("MSA by Population Total") %>%
+    hideGroup("MSA by Race/Ethnicity") %>%
     
     # add options
     addLayersControl(
@@ -507,9 +507,12 @@ third_way_map <- function(univs, metros) {
 univs <- as.character(unique(df$univ_id))
 metros <- unique(as.character(univ_sample$metro1))
 
+metros <- c(metros, '16980')  # Chicago
+
 # univs <- c('110653', '110635')  # Irvine, Berkeley
 # metros <- c('31080', '35620')  # LA, NY
 
-third_way_map(univs, metros)
+third_way_map(c('215293', '110653'), c('16980', '35620'))
 
-saveWidget(third_way_map(univs, metros), 'third_way_map.html', background = 'transparent')
+saveWidget(third_way_map(univs, metros), 'map_income.html', background = 'transparent')
+saveWidget(third_way_map(univs, metros), 'map_race.html', background = 'transparent')

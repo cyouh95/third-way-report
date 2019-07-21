@@ -2,14 +2,23 @@ function(el, x, choices) {
   
   console.log(choices);
   
-  var myMap = this;
+  let myMap = this;
   
-  var cbsa_code = choices.metro_choices.cbsa_code,
+  let cbsa_code = choices.metro_choices.cbsa_code,
       cbsa_title = choices.metro_choices.cbsa_title,
       cbsa_lat = choices.metro_choices.cbsa_lat,
       cbsa_lng = choices.metro_choices.cbsa_lng,
       univ_id = choices.univ_choices.univ_id,
       univ_name = choices.univ_choices.univ_name;
+      
+  // buttons
+  
+  $('.easy-button-button').css('width', 'auto');
+  $('.easy-button-button .button-state .fa').css({'float': 'left', 'margin-top': '10px'});
+  
+  $('button[title="Toggle View"] .button-state').append('<span id="view-btn" style="display: inline-block; float: left; padding-left: 5px;">National View</span>');
+  $('button[title="Select Metro Area"] .button-state').append('<span style="display: inline-block; float: left; padding-left: 5px;">Select Metro Area</span>');
+  $('button[title="Select University"] .button-state').append('<span style="display: inline-block; float: left; padding-left: 5px;">Select University</span>');
   
   // metro selection options
   
@@ -53,7 +62,10 @@ function(el, x, choices) {
     active_attr.active_metro = metro;
     set_active_metro();
     
-    myMap.setView([lat, lng], 8);
+    myMap.setView([lat, lng], 8.2);
+    
+    $('button[title="Toggle View"]').attr('data-national', false);
+    $('#view-btn').html('National View');
     
     reset_overlays();
     update_sel_text();
@@ -137,13 +149,18 @@ function(el, x, choices) {
   // default settings on load
       
   let active_attr = {
-    active_metro: '31080',  // default metro: LA
-    active_univ: '110653'  // default univ: Irvine
+    active_metro: '16980',  // default metro: Chicago
+    active_univ: '215293'  // default univ: University of Pittsburgh
   };
   
   $('.legend, .awesome-marker-shadow, #metro-control, #univ-control').css('display', 'none');
   
   $('input[data-cbsa="' + active_attr.active_metro + '"]').trigger('click');
   $('input[data-ipeds="' + active_attr.active_univ + '"]').trigger('click');
+  
+  // layers selected by default
+  // $('.leaflet-control-layers-base .leaflet-control-layers-selector').eq(1).trigger('click');
+  // $('.leaflet-control-layers-overlays .leaflet-control-layers-selector').first().trigger('click');
+  // $('.leaflet-control-layers-overlays .leaflet-control-layers-selector').eq(1).trigger('click');
 
 }
