@@ -2,28 +2,28 @@
 
 @font-face {
   font-family: "League Spartan";
-  src: url("/assets/fonts/league-spartan/LeagueSpartan-Bold.otf");
+  src: url("../fonts/league-spartan/LeagueSpartan-Bold.otf");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Century Gothic";
-  src: url("/assets/fonts/century-gothic/gothicr.ttf");
+  src: url("../assets/fonts/century-gothic/gothicr.ttf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Century Gothic";
-  src: url("/assets/fonts/century-gothic/gothici.ttf");
+  src: url("../assets/fonts/century-gothic/gothici.ttf");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Century Gothic";
-  src: url("/assets/fonts/century-gothic/gothicb.ttf");
+  src: url("../assets/fonts/century-gothic/gothicb.ttf");
   font-weight: 700;
   font-style: normal;
 }

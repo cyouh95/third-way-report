@@ -99,19 +99,19 @@ Additionally, research finds that high school visits are instrumental for mainta
 
 ###### Overall Patterns
 
-<iframe src="/assets/tables/event_count.html" width="955" height="400" class="tableau offset"></iframe>
+<iframe src="./assets/tables/event_count.html" width="955" height="400" class="tableau offset"></iframe>
 
 ###### Income
 
-<img src="/assets/graphs/graph_income.png" />
+<img src="./assets/graphs/graph_income.png" />
 
-<iframe src="/assets/maps/map_income.html" width="955" height="700" class="tableau offset"></iframe>
+<iframe src="./assets/maps/map_income.html" width="955" height="700" class="tableau offset"></iframe>
 
 ###### Race
 
-<img src="/assets/graphs/graph_race.png" />
+<img src="./assets/graphs/graph_race.png" />
 
-<iframe src="/assets/maps/map_race.html" width="955" height="700" class="tableau offset"></iframe>
+<iframe src="./assets/maps/map_race.html" width="955" height="700" class="tableau offset"></iframe>
 
 ## Policy Implications
 
