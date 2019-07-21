@@ -1,20 +1,21 @@
 ---
-title: "Follow the money"
-subtitle: The Recruiting Behavior and Enrollment Priorities of Public Research Universities
-author: author names
-date: 
+title: "Follow the money: The Recruiting Behavior and Enrollment Priorities of Public Research Universities"
 urlcolor: blue
 output: 
   html_document:
-    toc: true
+    self_contained: false  # so fetching font would work https://github.com/rstudio/rmarkdown/issues/419
+    includes:
+        in_header: assets/html/header.html
+    css: assets/css/style.css
+    toc: false
     toc_depth: 2
     #toc_float: # toc_float option to float the table of contents to the left of the main document content. floating table of contents will always be visible even when the document is scrolled
       #collapsed: false # collapsed (defaults to TRUE) controls whether the TOC appears with only the top-level (e.g., H2) headers. If collapsed initially, the TOC is automatically expanded inline when necessary
       #smooth_scroll: true # smooth_scroll (defaults to TRUE) controls whether page scrolls are animated when TOC items are navigated to via mouse clicks
-    number_sections: true
+    number_sections: false
     fig_caption: yes # ? this option doesn't seem to be working for figure inserted below outside of r code chunk    
-    highlight: tango # Supported styles include "default", "tango", "pygments", "kate", "monochrome", "espresso", "zenburn", and "haddock" (specify null to prevent syntax    
-    theme: default # theme specifies the Bootstrap theme to use for the page. Valid themes include default, cerulean, journal, flatly, readable, spacelab, united, cosmo, lumen, paper, sandstone, simplex, and yeti.
+    highlight: null # Supported styles include "default", "tango", "pygments", "kate", "monochrome", "espresso", "zenburn", and "haddock" (specify null to prevent syntax    
+    theme: null # theme specifies the Bootstrap theme to use for the page. Valid themes include default, cerulean, journal, flatly, readable, spacelab, united, cosmo, lumen, paper, sandstone, simplex, and yeti.
     df_print: tibble #options: default, tibble, paged
     keep_md: true # may be helpful for storing on github
 bibliography: third-way-bib.bib
@@ -23,29 +24,32 @@ csl: apa.csl
 
 
 
-# Introduction
+![](assets/images/sample_header.png)
+
+<section class="Content">
+
+## Introduction
 
 Socioeconomic and racial inequality in access to public research universities is a growing concern for scholars and policy advocates [@RN4409]. 
 
-text text text
+## Background
 
-# Background
-
-## Enrollment Management
+#### Enrollment Management
 
 While policy debates about access to higher education often focus on student behavior, universities are purposeful about which students they pursue and expend substantial resources crafting their class. Understanding the relationship between university enrollment behaviors and access inequality requires a basic understanding of the "enrollment management" industry. 
 
-Enrollment management (EM) is a profession that integrates techniques from marketing and economics in order to "influence the characteristics and the size of enrolled student bodies" [@RN2771, p. xiv].  EM is also a university administrative structure (e.g., "The Office of Enrollment Management") that coordinates the activities of offices responsible for admissions, financial aid, marketing, and recruiting. 
+Enrollment management (EM) is a profession that integrates techniques from marketing and economics in order to "influence the characteristics and the size of enrolled student bodies" [@RN2771, p. xiv]. EM is also a university administrative structure (e.g., "The Office of Enrollment Management") that coordinates the activities of offices responsible for admissions, financial aid, marketing, and recruiting. 
 
 The broader enrollment management industry consists of professionals working within universities (e.g., admissions counselors), the associations enrollment management professionals belong to (e.g., National Association for College Admission Counseling), and the marketing/enrollment management consultancies universities hire (e.g., Hobsons, Ruffalo Noel Levitz).
 
-Figure 2 depicts the "enrollment funnel," a conceptual tool the EM industry uses to describe stages in student recruitment in order to inform targeted recruiting interventions. The vast majority of research on enrollment management focuses on the final stages of the enrollment funnel, specifically which applicants are admitted [e.g., @RN3536; @RN3544; @RN3523; @RN4131] and the use of financial aid "leveraging" to convert admits to enrollees [e.g., @RN2241; @RN3564; @RN1948]. By contrast, the enrollment management industry expends substantial resources on earlier stages in the funnel.  "Prospects" are "all the potential students you would want to attract to your institution" [@RN4322]. "Inquiries" are prospects that contact the university, including those who respond to university solicitations (e.g., email, brochure) and those who reach out on their own (e.g., sending SAT/ACT scores to a university, completing a form on the admissions website).  
+Figure 1 depicts the "enrollment funnel," a conceptual tool the EM industry uses to describe stages in student recruitment in order to inform targeted recruiting interventions. The vast majority of research on enrollment management focuses on the final stages of the enrollment funnel, specifically which applicants are admitted [e.g., @RN3536; @RN3544; @RN3523; @RN4131] and the use of financial aid "leveraging" to convert admits to enrollees [e.g., @RN2241; @RN3564; @RN1948]. By contrast, the enrollment management industry expends substantial resources on earlier stages in the funnel.  "Prospects" are "all the potential students you would want to attract to your institution" [@RN4322]. "Inquiries" are prospects that contact the university, including those who respond to university solicitations (e.g., email, brochure) and those who reach out on their own (e.g., sending SAT/ACT scores to a university, completing a form on the admissions website).  
 
-![Enrollment Funnel FIX CAPTION](assets/images/funnel_alt.png)
+###### Figure 1: Enrollment Management Funnel
+![](assets/images/funnel_alt.png)
 
 
 
-Universities identify prospects primarily by purchasing ``student lists'' from College Board and ACT. For example, from 2010 to 2018, the University of Alabama paid \$1.9 million to College Board and \$349k to ACT, Inc [@RN4035]. Student lists contain contact details and background information (demographic, socioeconomic, and academic) about individual prospects. Universities control which prospects are included in the list by selecting on criteria such as zip code, race, and academic achievement. @RN4314 found that the median public university purchases about 64,000 names. 
+Universities identify prospects primarily by purchasing "student lists" from College Board and ACT. For example, from 2010 to 2018, the University of Alabama paid \$1.9 million to College Board and \$349k to ACT, Inc [@RN4035]. Student lists contain contact details and background information (demographic, socioeconomic, and academic) about individual prospects. Universities control which prospects are included in the list by selecting on criteria such as zip code, race, and academic achievement. @RN4314 found that the median public university purchases about 64,000 names. 
 
 Once identified, prospects are targeted with recruiting interventions aimed at soliciting inquiries and applications [@RN4323; @RN4402]. Face-to-face interventions include off-campus visits by universities admissions representatives (e.g., to a local high school) and on-campus visits by prospects. Non face-to-face interventions include email, mail (e.g., postcards, brochures), and texts.  Additionally, universities utilize paid advertising (e.g., pay-per-click ads from Google, cookie-driven ads that target prospects who visit your website) and social media (e.g., Twitter, Instagram, YouTube) as a means of generating inquiries and creating positive "buzz" amongst prospects. Given the the rise in "stealth applicants" who do not inquire before applying [@RN4411], social media enables universities to tell their story to prospects who do not contact the university and do not wish to be contacted.
 
@@ -54,8 +58,9 @@ The "data science" revolution in market research has given birth to a niche indu
 
 
 
-## Off-Campus Recruiting
+#### Off-Campus Recruiting
 
+<!--
 DESCRIPTION OF OFF-CAMPUS RECRUITING
 transition/ and what it is; e.g., can use phrase “travel season”
 Ruffalo Noel Levitz expenditure on off-campus recruiting
@@ -71,11 +76,11 @@ TRANSITION HOOK
 Concerns about declining access to public flagship for low-income and URM; concerns about growth in nonres
 We know recruiting has an effect on application/enrollment decisions.
 What we don’t know is extent to which publics are focusing recruiting efforts on affluent nonres rather than low-income/URM
+-->
 
+Given the focus of this report, what is the role of off-campus visits in student recruitment? In the admissions world, "travel season" refers to the mad dash between Labor Day and Thanksgiving when admissions officers host hotel receptions, college fairs, and visit high schools across the country \citep{RN3519}. Research by both EM consulting firms and by scholars describe off-campus recruiting as a means of simultaneously identifying prospects and connecting with prospects already being targeted through mail/email [e.g., @RN4323; @RN4315; @RN3519].
 
-Given the focus of this report, what is the role of off-campus visits in student recruitment? In the admissions world, ``travel season'' refers to the mad dash between Labor Day and Thanksgiving when admissions officers host hotel receptions, college fairs, and visit high schools across the country \citep{RN3519}. Research by both EM consulting firms and by scholars describe off-campus recruiting as a means of simultaneously identifying prospects and connecting with prospects already being targeted through mail/email [e.g., @RN4323; @RN4315; @RN3519].
-
-ADD STUFF ABOUT EXPENDITURE ON OFF-CAMPUS RECRUITING VISITS HERE?
+<!-- ADD STUFF ABOUT EXPENDITURE ON OFF-CAMPUS RECRUITING VISITS HERE? -->
 
 With respect to efficacy, @RN4402 found that off-campus visits were the second highest source of inquiries (after student list purchases), accounting for 19.0\% of inquiries for the median public university. Off-campus visits were also the third highest source of enrollees (after stealth applicants and on-campus visits), accounting for 16\% of enrollees \citep{RN4402}.
 
@@ -86,20 +91,34 @@ Additionally, research finds that high school visits are instrumental for mainta
 
 
 
-# Research and Findings
+## Research and Findings
 
-## Data and Methods
+#### Data and Methods
 
-## Results
+#### Results
 
-### Overall Patterns
+###### Overall Patterns
 
-### Income
+<iframe src="/assets/tables/event_count.html" width="955" height="400" class="tableau offset"></iframe>
 
-### Race
+###### Income
 
-# Policy Implications
+<img src="/assets/graphs/graph_income.png" />
 
-# Conclusion
+<iframe src="/assets/maps/map_income.html" width="955" height="700" class="tableau offset"></iframe>
 
-# References
+###### Race
+
+<img src="/assets/graphs/graph_race.png" />
+
+<iframe src="/assets/maps/map_race.html" width="955" height="700" class="tableau offset"></iframe>
+
+## Policy Implications
+
+## Conclusion
+
+<div class="ProductEndnotes mt-5">
+#### Endnotes
+<div id="refs"></div>
+</div>
+</section>
