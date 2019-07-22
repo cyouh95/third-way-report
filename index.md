@@ -30,7 +30,15 @@ csl: apa.csl
 
 ## Introduction
 
-Socioeconomic and racial inequality in access to public research universities is a growing concern for scholars and policy advocates [@RN4409]. 
+Socioeconomic and racial inequality in access to public research universities is a growing concern for scholars and policy advocates [@RN4409].
+
+###### Table 1: Number of high-achieving students by SES quartile
+
+<iframe src="./assets/tables/hsls_tbl1.html" width="955" height="180" class="tableau offset"></iframe>
+
+###### Table 2: Initial post-secondary destination of high-achieving students by SES quartile
+
+<iframe src="./assets/tables/hsls_tbl2.html" width="955" height="240" class="tableau offset"></iframe>
 
 ## Background
 
@@ -45,7 +53,7 @@ The broader enrollment management industry consists of professionals working wit
 Figure 1 depicts the "enrollment funnel," a conceptual tool the EM industry uses to describe stages in student recruitment in order to inform targeted recruiting interventions. The vast majority of research on enrollment management focuses on the final stages of the enrollment funnel, specifically which applicants are admitted [e.g., @RN3536; @RN3544; @RN3523; @RN4131] and the use of financial aid "leveraging" to convert admits to enrollees [e.g., @RN2241; @RN3564; @RN1948]. By contrast, the enrollment management industry expends substantial resources on earlier stages in the funnel.  "Prospects" are "all the potential students you would want to attract to your institution" [@RN4322]. "Inquiries" are prospects that contact the university, including those who respond to university solicitations (e.g., email, brochure) and those who reach out on their own (e.g., sending SAT/ACT scores to a university, completing a form on the admissions website).  
 
 ###### Figure 1: Enrollment Management Funnel
-![](assets/images/funnel_alt.png)
+<img src="./assets/images/funnel_alt.png" alt="enrollment_funnel" width="300"/>
 
 
 
@@ -97,17 +105,19 @@ Additionally, research finds that high school visits are instrumental for mainta
 
 #### Results
 
-###### Overall Patterns
+##### Overall Patterns
+
+###### Table 3: Number of events by type and in-state, out-of-state
 
 <iframe src="./assets/tables/event_count.html" width="955" height="400" class="tableau offset"></iframe>
 
-###### Income
+##### Income
 
 <img src="./assets/graphs/graph_income.png" />
 
 <iframe src="./assets/maps/map_income.html" width="955" height="700" class="tableau offset"></iframe>
 
-###### Race
+##### Race
 
 <img src="./assets/graphs/graph_race.png" />
 
