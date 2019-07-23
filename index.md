@@ -69,12 +69,12 @@ The "data science" revolution in market research has given birth to a niche indu
 #### Off-Campus Recruiting
 
 <!--
-DESCRIPTION OF OFF-CAMPUS RECRUITING
+P1: DESCRIPTION OF OFF-CAMPUS RECRUITING
 transition/ and what it is; e.g., can use phrase “travel season”
 Ruffalo Noel Levitz expenditure on off-campus recruiting
 Stevens: what The College did
 E.g., visited same schools year after year, focused on rich public and private
-IMPACT OF OFF-CAMPUS RECRUITING
+P2: IMPACT OF OFF-CAMPUS RECRUITING
 With respect to impact, off-campus recruiting is a means of identifying prospects and of deepening connections w/ prospects already targeted through other interventions
 Market research by Ruffalo Noel Levitz
 Holland: directly affects application and enrollment decisions 
@@ -86,18 +86,11 @@ We know recruiting has an effect on application/enrollment decisions.
 What we don’t know is extent to which publics are focusing recruiting efforts on affluent nonres rather than low-income/URM
 -->
 
-Given the focus of this report, what is the role of off-campus visits in student recruitment? In the admissions world, "travel season" refers to the mad dash between Labor Day and Thanksgiving when admissions officers host hotel receptions, college fairs, and visit high schools across the country \citep{RN3519}. Research by both EM consulting firms and by scholars describe off-campus recruiting as a means of simultaneously identifying prospects and connecting with prospects already being targeted through mail/email [e.g., @RN4323; @RN4315; @RN3519].
+Given our research focus on off-campus recruiting, what do we know about the role of off-campus visits in student recruitment? In the admissions world, "travel season" refers to the mad dash between Labor Day and Thanksgiving when admissions officers host hotel receptions, college fairs, and visit high schools across the country [@RN3519].  @RN4402 found that public universities spent 18% of their marketing and recruiting budget on "travel to high schools and college fairs," compared to 15% for on-campus visits and 14% for student list purchases. ^[Only "traditional advertising" (e.g., billboards, newspapers, magazines, TV, radio) accounted for a higher percentage (24%)].  @RN3519, who analyzed off-campus recruiting efforts at a selective, private liberal ars college, found that The College visited the same schools year after year because successful recruiting depends on long-term relationships with high schools. Further, the College tended to visit affluent schools, and private schools in particular, because these schools enroll high-achieving students who can afford tuition and because these schools have the resources and motivation to host a successful visit.
 
-<!-- ADD STUFF ABOUT EXPENDITURE ON OFF-CAMPUS RECRUITING VISITS HERE? -->
+Analyses of the effects of off-campus recruiting broadly conceive off-campus recruiting as a means of simultaneously identifying prospects and connecting with prospects already being targeted through mail/email [e.g., @RN4323; @RN4315; @RN3519]. @RN4402 found that off-campus visits were the second highest source of inquiries (after student list purchases), accounting for 19.0\% of inquiries for the median public university. Off-campus visits were also the third highest source of enrollees (after stealth applicants and on-campus visits), accounting for 16\% of enrollees \citep{RN4402}.  @RN4324, who analyzed recruiting from the perspective of high school students, found that high school visits influenced where students applied and where they enrolled, particularly first-generation students. By contrast, affluent students with college-educated parents tended to be less taken by overtures from universities and more concerned about university prestige. Finally, echoing findings from market research [@RN4402], @RN3519 found that high school visits were instrumental for maintaining strong relationships with guidance counselors at "feeder schools." These relationships were essential because "the College's reputation and the quality of its applicant pool are dependent upon its connections with high schools nationwide" [@RN3519, p. 53].
 
-With respect to efficacy, @RN4402 found that off-campus visits were the second highest source of inquiries (after student list purchases), accounting for 19.0\% of inquiries for the median public university. Off-campus visits were also the third highest source of enrollees (after stealth applicants and on-campus visits), accounting for 16\% of enrollees \citep{RN4402}.
-
-
-Additionally, research finds that high school visits are instrumental for maintaining warm relationships with guidance counselors at "feeder schools." @RN4402 found that face-to-face meetings were the most effective means of engaging high school guidance counselors.  @RN3519 worked as a regional admissions recruiter for a selective liberal arts college as part of his broader ethnography on college admissions.  Relationships with counselors were essential because "The College's reputation and the quality of its applicant pool are dependent upon its connections with high schools nationwide" [@RN3519, p. 53]. The College visited the same schools year after year because successful recruiting depends on long-term relationships with high schools. Further, the College tended to visit affluent schools, and private schools in particular, because these schools enroll high-achieving students who can afford tuition and because these schools have the resources and motivation to host a successful visit.
-
-@RN4324 analyzed high school visits from the student perspective. High school visits influenced where students applied and where they enrolled. The strength of this finding was modest for affluent students with college-educated parents. These students tended to be more concerned about college prestige and less influenced by overtures from colleges. However, high school visits strongly influenced decisions by  first-generation students and under-represented students of color.  These students often felt that "school counselors had low expectations for them and were too quick to suggest that they attend community college" and were drawn to colleges that "made them feel wanted" by taking the time to visit.  
-
-
+While prior research finds that off-campus recruiting influences the application and enrollment decisions of underrepresented students and accounts for a larger share of university marketing/recruiting budgets, our research is the first to systematically investigate which high schools receive visits by which universities.
 
 ## Research and Findings
 
