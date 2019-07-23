@@ -56,13 +56,17 @@ Socioeconomic and racial inequality in access to public research universities is
 
 ## Background
 
-#### Enrollment Management
+#### Enrollment Management by Public Research Universities
 
 While policy debates about access to higher education often focus on student behavior, universities are purposeful about which students they pursue and expend substantial resources crafting their class. Understanding the relationship between university enrollment behaviors and access inequality requires a basic understanding of the "enrollment management" industry. 
 
 Enrollment management (EM) is a profession that integrates techniques from marketing and economics in order to "influence the characteristics and the size of enrolled student bodies" [@RN2771, p. xiv]. EM is also a university administrative structure (e.g., "The Office of Enrollment Management") that coordinates the activities of offices responsible for admissions, financial aid, marketing, and recruiting. 
 
+CUT PARAGRAPH ON EM INDUSTRY; ADD PARAGRAPHS ON IRON TRIANGLE AND THE CAUSES/CONSEQUENCES OF NONRES ENROLLMENT GROWTH BY PUBLIC RESEARCH UNIVERSITIES
+
 The broader enrollment management industry consists of professionals working within universities (e.g., admissions counselors), the associations enrollment management professionals belong to (e.g., National Association for College Admission Counseling), and the marketing/enrollment management consultancies universities hire (e.g., Hobsons, Ruffalo Noel Levitz).
+
+#### The Enrollment Funnel
 
 `r fig_nums('funnel_alt', display='cite')` depicts the "enrollment funnel," a conceptual tool the EM industry uses to describe stages in student recruitment in order to inform targeted recruiting interventions. The vast majority of research on enrollment management focuses on the final stages of the enrollment funnel, specifically which applicants are admitted [e.g., @RN3536; @RN3544; @RN3523; @RN4131] and the use of financial aid "leveraging" to convert admits to enrollees [e.g., @RN2241; @RN3564; @RN1948]. By contrast, the enrollment management industry expends substantial resources on earlier stages in the funnel.  "Prospects" are "all the potential students you would want to attract to your institution" [@RN4322]. "Inquiries" are prospects that contact the university, including those who respond to university solicitations (e.g., email, brochure) and those who reach out on their own (e.g., sending SAT/ACT scores to a university, completing a form on the admissions website).  
 
