@@ -62,9 +62,16 @@ While policy debates about access to higher education often focus on student beh
 
 Enrollment management (EM) is a profession that integrates techniques from marketing and economics in order to "influence the characteristics and the size of enrolled student bodies" [@RN2771, p. xiv]. EM is also a university administrative structure (e.g., "The Office of Enrollment Management") that coordinates the activities of offices responsible for admissions, financial aid, marketing, and recruiting. 
 
-CUT PARAGRAPH ON EM INDUSTRY; ADD PARAGRAPHS ON IRON TRIANGLE AND THE CAUSES/CONSEQUENCES OF NONRES ENROLLMENT GROWTH BY PUBLIC RESEARCH UNIVERSITIES
+<!--
+STUFF NOT CURRENTLY IN POLICY IMPLICATIONS
 
 The broader enrollment management industry consists of professionals working within universities (e.g., admissions counselors), the associations enrollment management professionals belong to (e.g., National Association for College Admission Counseling), and the marketing/enrollment management consultancies universities hire (e.g., Hobsons, Ruffalo Noel Levitz).
+-->
+
+The "iron triangle" of enrollment management states that universities care about the three broad enrollment goals of access, academic prestige, and tuition revenue.  Because resources are scarce, the imagery of the iron triangle suggests that pursuing one goal involves trade-offs with other goals.  Growing preoccupation with rankings incentivizes universities to prioritize the academic prestige goal. State disinvestment incentivizes universities to prioritize the tuition revenue goal and discourages universities from enrolling large numbers of low-income students.  Consistent with this idea, average state funding at public research universities declined from X in XXXX to Y in YYYY. Over the same time period, average net tuition revenue increased from X to Y.  
+
+Empirical research shows that public research universities responded to declining state appropriations by dramatically increasing nonresident enrollment [CITE OJ BC 2015].  Since nonresident students tend to be more affluent and are less likely to be Black or Latinx than resident students, Growth in the share of nonresident students was associated with declines in the share of Pell recipients and Black/Latinx students at public research universities.  At prestigious public research universities (e.g., University of Michigan, UC-Berkeley), nonresident enrollment growth has a negative causal effect on enrollment opportunities for resident students. While prestigious public research universities enjoy strong demand from high-achieving out-of-state students, the majority of public research universities (e.g., University of Arizona) have demand from out-of-state students who could not gain admission to their own state flagship. Research shows that many non-prestigious public flagship universities adopted institutional "merit aid" programs that specifically target out-of-state students with mediocre academic achievement.
+
 
 #### The Enrollment Funnel
 
@@ -162,65 +169,81 @@ While prior research finds that off-campus recruiting influences the application
 
 ## Policy Implications
 
+<!--
+STUFF NOT CURRENTLY IN POLICY IMPLICATIONS
 
+- degree completion is largely a function of access
+- innovative research on access rather than degree completion?
+-->
+
+Our research suggests that policy debates about college access must be reframed from a focus on student deficiencies towards a focus on university enrollment priorities. Mainstream policy debates highlight the "achievement gap" and "under-matching" -- high achieving students do not apply to selective colleges -- as primary causes of racial and socioeconomic inequality in college access. These explanations point to deficiencies of students and k-12 schools and, in turn, motivate policy interventions that attempt to fix students.  However, if university enrollment priorities are biased then fixing student achievement and student decision-making will fix college access. 
+
+Using recruiting behavior as an indicator of university enrollment priorities, our results indicate socioeconomic and racial bias in the enrollment priorities of many public research universities. The majority of public research universities in our analysis sample made far more out-of-state recruiting visits than in-state recruiting visits.  Out of state recruiting visits were concentrated in affluent, predominantly white public and private schools.  This income and racial bias persisted even after controlling for school size and academic achievement.
+
+<!--
 Mainstream policy debates identify the "achievement gap," "under-matching" -- when high achieving students fail to apply to selective colleges -- and inability to pay as primary causes of racial and socioeconomic inequality in college access.  These explanations highlight the deficiences of students, households, and k-12 schools and -- using the language of economists -- can all be described as "demand side" factors. In turn, policy solutons focus on fixing students, emphasizing interventions that increase achievement and interventions that reduce under-match by giving students better information and guidance about college options.  If universities are biased against low-income students or communities of color, then fixing student achievement and student decision-making will not overcome access inequality. 
 
-Our research suggests that policy debates about college access must be reframed to focus on university enrollment priorities. We use university recruiting behavior as an indicator of enrollment priorities. The majority of public research universities in our analysis sample made far more out-of-state recruiting visits than in-state recruiting visits.  Out of state recruiting visits were concentrated in affluent, predominantly white public and private schools.  This income and racial bias persisted even after controlling for school size and academic achievement.
+Our research suggests that policy debates about college access must be reframed to focus on university enrollment priorities. We use university recruiting behavior as an indicator of enrollment priorities. 
+-->
 
 
-Public funding for higher education dramatically affects university enrollment priorities. Cuts to public funding shift higher education from a public good to a private good, creating incentives to prioritize customers who pay the most. Nonresident tuition price is typically two to three times higher than resident price. Public research universities responded to state funding cuts following the 2008 recession by dramatically growing nonresident enrollment [CITE]. Many public flagship universities adopted institutional financial aid policies that explicitly target out-of-state students with mediocre academic achievement [CITE]. We found a strong relationship between state funding and recruiting behavior. Universities with weak state funding tended make the most out-of-state recruiting visits. Universities with strong state funding tended to visit a larger share of in-state high schools and were more likely to visit in-state schools with large shares of low-income students and non-white students. 
-
-
-While state policymakers often rationalize cuts to public research universities based on the premise that these universities can generate alternative revenues, the fundamental takeaway from our research is that forcing universities to survive from tuition revenue compels universities to prioritize customers with high ability to pay.
+Although policy debates discuss public funding primarily in terms of consequences for student behavior (e.g., funding cuts cause net price to rise and affordability to decline), public funding dramatically affects university enrollment priorities. Cuts to public funding shift higher education from a public good to a private good, creating incentives to prioritize customers who pay the most. Nonresident tuition price is typically two to three times higher than resident price. Public research universities responded to state funding cuts following the 2008 recession by dramatically growing nonresident enrollment [CITE]. Many public flagship universities adopted institutional financial aid policies that explicitly target out-of-state students with mediocre academic achievement [CITE]. We found a strong relationship between state funding and recruiting behavior. Universities with weak state funding tended make the most out-of-state recruiting visits. Universities with strong state funding tended to visit a larger share of in-state high schools and were more likely to visit in-state schools with large shares of low-income students and non-white students. 
+<!--
+Although policy debates about public funding and college access certainly consider prices and affordability, these issues are discussed in terms of their effects on student behavior rather than their effects on university behavior. 
 
 Although policy debates about public funding and college access certainly consider prices and affordability, these issues are discussed in terms of their effects on student behavior rather than their effects on university behavior. We argue that higher education funding policies should be debated in terms of their effects on university enrollment behavior.  
+-->
 
+
+```{r, eval=FALSE, include=FALSE}
 Given their responsibility to prepare the future professional, business, and civic leaders of the state, higher education funding policy should encourage public research universities to enroll the most talented, meritorious students in the state rather those who generate the most revenue. 
 
-We highlight two broad funding solutions to change university enrollment priorities: first, increase block grant funding such that universities can pay for the cost of educating students without relying on tuition; and, second, increase need-based financial aid as a means of increasing the purchasing power of poor students.
+```
+
+We highlight two broad approaches to public funding as a means of changing university enrollment priorities: first, increase block grant funding such that universities can pay for the cost of educating students without relying on tuition; and, second, increase need-based financial aid as a means of increasing the purchasing power of poor students.
 
 State appropriations are the most important source of block grant funding to universities. When state appropriations decline, universities ask permisson to increase resident tuition price. Granting this request reduces the number of state residents who can afford in-state public universities. Denying this request reduces the ability of public universities to survive by enrolling state residents and increases the incentive to enroll nonresident students.  By contrast, if state appropriations increased substantially, states could demand a reduction in resident tuition price and universities could survive by enrolling state residents.
 
 Need-based grant aid programs can be thought of as voucher programs that follow students. These programs increase the purchasing power of poor students, making them more financially attractive to universities that rely on tuition revenue.  The most important programs are federal Pell Grant and state need-based grant aid (e.g., ).  Though not a grant, income sharing agreements (ISAs) represent a private sector approach to increasing student purchasing power [DEFINE ISAs? CITE?].  Policy changes that substantially increase the maximum award (e.g., increasing the Pell maximum from $6,195 to $10,000) enable universities to enroll low-income students without offering substantial need-based institutional aid, thereby increasing the number of low-income students they are willing to enroll.
 
-Following decades of pessimism about public funding for higher education, many states are adopting "free college" policies and Presidential candidates have unveiled plans to dramatically increase federal investments. While most analyses focus on the effects of these programs and plans on student behavior, we comment briefly on the consequences for university behavior.
+Following decades of pessimism about public funding for higher education, many states are adopting "free college" policies and Presidential candidates have unveiled plans to dramatically increase federal investments. State "free college" policies -- often called "free tuition" policies are voucher programs that provide eligible students with grant aid to cover costs associated with attending in-state public institutions. These programs are designed to be combined with other sources of grant aid (e.g., Pell, state need- and merit-based aid).  Programs differ on several dimensions [@RN4467]: which costs can be covered (e.g., tuition, fees, living expenses); "first dollar" (i.e., receiving other grant aid does not reduce award amount) versus "last dollar" (award only covers eligible costs not covered by other grant aid); whether award can be used at public universities or only community colleges; etc.
 
-State "free college" policies -- often called "free tuition" policies are voucher programs that provide eligible students with grant aid to cover costs associated with attending in-state public institutions. These programs are designed to be combined with other sources of grant aid (e.g., Pell, state need- and merit-based aid).  Programs differ on several dimensions [@RN4467]: which costs can be covered (e.g., tuition, fees, living expenses); "first dollar" (i.e., receiving other grant aid does not reduce award amount) versus "last dollar" (award only covers eligible costs not covered by other grant aid); whether award can be used at public universities or only community colleges; etc.
+Democrat presidential candidates Bernie Sanders and Elizabeth Warren have both proposed policies to (1) eliminate tuition and fees at public colleges and universities through federal matching funds to states and (2) to finance the non-tuition costs of low- and middle-income students by increasing federal grant aid to students. Other candidates have proposed making community college free but not public universities (e.g., Joe Biden) and dramatically increasing the size of Pell maximum (e.g., NAME CANDIDATE).
 
-COMMENTS ON FREE COLLEGE POLICIES
-- GOOD THAT THEY ARE NOT AN UNFUNDED MANDATE [FORCING UNIVERSITIES TO ENROLL STUDENTS WITHOUT TUITION $ FOLLOWING STUDENTS]
-- BEST THOUGHT OF AS STATE MERIT/NEED BASED AID
-- THESE ARE VOUCHERS THAT INCREASE DESIRABILITY OF LOW-INCOME STUDENTS, BUT FUNDING AMOUNTS ARE GENERALLY MODEST, SO WON'T RESULT IN BIG CHANGES.
+While most analyses of state free college policies and presidential candidate plans focus on student effects, we comment briefly on the effects on university behavior.  State free college policies are similar to state need-based aid programs in that they are vouchers that follow students to postsecondary institutions. These programs increase the purchasing power of poor students, making them more financially attractive to postsecondary institutions. We are critical of programs that only permit community college attendance because these programs push students to community colleges and do not incentivize public universities to expand low-income enrollment. If we care about BA attainment for low-income students, then free college programs must permit public university enrollment because empirical research unequivocally finds that starting at a community college as opposed to a public university has a dramatic negative causal effect on the probability of receiving a BA [CITE; FOOTNOTE]. Many programs that allow university attendance are "last dollar" programs or do not cover living costs [@RN4467]. As a result, average award amount and total program expenditure tends to be quite modest. These programs may not make public universities sufficiently attractive to low-income students nor low-income students sufficiently attractive to public universities.
 
+The Sanders and Warren plans would have more dramatic effects on university enrollment priorities because they far exceed the combined funding of state free college programs.  In theory, the plan to replace undergraduate tuition and fee revenue with federal-state match block grant funding would eliminate university reliance on undergraduate tuition and remove disincentives against enrolling large number of students who cannot afford tuition without need-based institutiona aid. In contrast to federal-state block grants, plans increase federal higher education funding by dramatically increasing the Pell grant maximum (e.g., from $6,125 to $12,000) maintain university reliance on tuition revenue but increase university willlingness to expand low-income enrollment by increasing the purchasing power of poor students.
 
 
+```{r, eval=FALSE, include=FALSE}
+The Sanders plan to eliminate the $70 billion per year spent on undergraduate tuition and fees at public institutions through a 2-to-1 matching program where the federal government provides $47 billion and states provide the remaining $23 billion (33%). Sanders also proposes increases in Pell Grant funding and work-study funding to help low- and middle-income students pay non-tuition costs. Similarly, the Warren plan proposes federal matching of state funding to eliminate tuition and fees. She also proposes expanding Pell Grant eligibility and icnreasing Pell Grant funding by $100 billion over the next decade to cover non-tuition costs. By contrast, more centrist candidates (e.g,. Senator Amy Klobuchar, Joe Biden) have proposed making community college free and dramatically expanding the maximum Pell award [FIND SPECIFICS].
 
-Public research universities prepare the future professional, business, and civic leaders of the state 
+Sanders plan to eliminate tuition at public institutions
+https://www.sanders.senate.gov/download/collegeforallsummary/?inline=file
 
-and their priority should be enrolling the most talented, meritorious students in the state. 
+Sanders plan to increase pell
+https://www.vox.com/policy-and-politics/2019/6/23/18714615/bernie-sanders-free-college-for-all-2020-student-loan-debt
 
+Warren plan
+https://medium.com/@teamwarren/im-calling-for-something-truly-transformational-universal-free-public-college-and-cancellation-of-a246cd0f910f
 
+LINKS TO OTHER CANDIDATE PLANS
+https://www.insidehighered.com/news/2019/04/05/pete-buttigieg-democratic-candidate-bucks-progressives-free-college
 
-
-
-  
-
-create an incentive to enroll 
-
-
-Cuts to state funding create an incentive to enroll students that generate high tuition revenue, particularly nonresident students who typically pay two to three times more than residents. 
-
-We also find a strong relationship between state funding and recruiting behavior.
-
-
-We find a strong relationship between state funding and rec 
+```
 
 
-Contemporary policy debates about racial and socioeconomic inequality in college access tend to focus on the “achievement gap” and on “undermatching,” the idea that high-achieving, low-income students fail to apply to good colleges because they have bad guidance at home and at school (The White House, 2014b). These explanations focus on “deficiencies” of students and K-12 schools. As such, policy interventions to increase college access mostly focus on student academic achievement and decision-making (Page & Scott-Clayton, 2016).
+Policymakers can also affect university behavior through regulation. In our research, the only universities that made more in-state than out-of-state visits were located in states -- North Carolina and California -- with strong nonresident enrollment caps. However, we strongly caution policymakers that regulation is not an alternative to adequate funding. State funding for higher education in North Carolina and California remains above the national average [CITE/CHECK].  Without adequate public funding, restrictions on university revenue-generating behavior causes educational quality to dcline (e.g., higher student-to-teacher ratios, students cannot enroll in classes necessary for graduation), gaming behavior to overcome regulations, or unintended consequences. For example, capping nonresident enrollment incentivizes universities to enroll in-state students that do not require need-based financial aid.
 
+We recommend that financial regulations focus on limiting expenditures that do not have educational value. For example, students from affluent households have strong preferences for consumption amenities [CITE. JACOB/MCCALL?]. In a paradoxical example of "he who pays the piper calls the tune," public flagship universities respond to state funding cuts by building luxury facilities (e.g., luxury dorms and recreational facilities, pools with a "lazy river") designed to attract nonresident students [CITE].  Construction of these facilities is often financed by bonds. Paying annual interest on these bonds increases costs and, in turn, tuition price for decades, perpetuating university enrollment preferences towards students who pay the most. Restrictions on debt fiancing could reduce this vicious cylcle, but the better approach would be to provide adequate public funding so that universities need not provide lavish amenities as a means of generating revenue.
 
+Regulations may necessary to overcome racial bias in university enrollment priorities. While state funding cuts provide a rationale for the income bias we observed in university recruiting behavior, it does not explain the finding that public research universities were less likely to visit out-of-state schools with high non-white enrollment, even after controlling for income, school enrollment size, and academic achievement. Jack [CITE] finds that universities pursue racial diversity by recruting students of color from predominantly white public and private schools. Our findings that universities recruit at affluent, predominantly white schools may be an example of universities simultaneously pursuing tuition revenue and racial diversity. Alternatively, these results may be due to institutional racism with respect to assumptions made about students of color from predominantly non-white schools. Regardless, it is unacceptable for universities to systematcally ignore communities of color. One policy solution could be to publicize the extent to which universities only enroll students of color from affluent, predominantly white schools and communities.
 
 ## Conclusion
+
+
+State policymakers often rationalize cuts to public research universities based on the assumption that these universities can generate their own revenues.  Our research finds that most public research universities successfully grow tuition revenue to compensate for state cuts. However, forcing universities to survive from tuition revenue compels them to prioritize customers who pay the most. Public flagship universities expend substantial resources recruiting and offering "merit" aid to mediocre out-of-state students who are rejected from public universities in their own state, while high-acieving, low-income students are neglected, funneled to community colleges that dramatically reduce their chances of getting a BA degree.  This is not a meritocracy. Nor is it an evil plot by universities. It is a rational response to incentives created by government disinvestment in public higher education.  Policymakers must take responsibility for providing a financial pathway that enables public universities to flourish by serving the mission of social mobility they were founded to serve.
+
 
 <div class="ProductEndnotes mt-5">
 #### Endnotes
