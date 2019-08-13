@@ -63,7 +63,7 @@ Empirical research shows that public research universities responded to declinin
 
 Figure 1 depicts the "enrollment funnel," a conceptual tool the EM industry uses to describe stages in student recruitment in order to inform targeted recruiting interventions. The vast majority of research on enrollment management focuses on the final stages of the enrollment funnel, specifically which applicants are admitted [e.g., @RN3536; @RN3544; @RN3523; @RN4131] and the use of financial aid "leveraging" to convert admits to enrollees [e.g., @RN2241; @RN3564; @RN1948]. By contrast, the enrollment management industry expends substantial resources on earlier stages in the funnel.  "Prospects" are "all the potential students you would want to attract to your institution" [@RN4322]. "Inquiries" are prospects that contact the university, including those who respond to university solicitations (e.g., email, brochure) and those who reach out on their own (e.g., sending SAT/ACT scores to a university, completing a form on the admissions website).  
 
-###### Figure 1: Enrollment Management Funnel
+###### Figure 1: Enrollment management funnel
 <img src="./assets/images/funnel_alt.png" alt="enrollment_funnel" width="300"/>
 
 
@@ -113,19 +113,28 @@ While prior research finds that off-campus recruiting influences the application
 
 ###### Table 3: Number of events by type and in-state, out-of-state
 
-<iframe src="./assets/tables/event_count.html" width="955" height="400" class="tableau offset"></iframe>
+<iframe src="./assets/tables/event_count.html" width="955" height="500" class="tableau offset"></iframe>
 
 ##### Income
 
-<img src="./assets/graphs/graph_income.png" />
+###### Figure 2: Average median household income of visited vs not visited public high schools
+
+<iframe src="./assets/graphs/third_way_income.html" width="750" height="920" class="tableau offset"></iframe>
+
+###### Figure 3: Visits to metro areas by median household income
 
 <iframe src="./assets/maps/map_income.html" width="955" height="700" class="tableau offset"></iframe>
 
 ##### Race
 
-<img src="./assets/graphs/graph_race.png" />
+###### Figure 4: Average racial composition of visited vs not visited high schools by in-state, out-of-state
+
+<iframe src="./assets/graphs/third_way_race.html" width="750" height="1000" class="tableau offset"></iframe>
+
+###### Figure 5: Visits to metro areas by percent Black/Latinx/Native
 
 <iframe src="./assets/maps/map_race.html" width="955" height="700" class="tableau offset"></iframe>
+
 
 ## Policy Implications
 

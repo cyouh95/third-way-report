@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Third Way Income Graph</title>
+    <style>
+        @font-face {
+          font-family: "Century Gothic";
+          src: url("../fonts/century-gothic/gothicr.ttf");
+          font-weight: 400;
+          font-style: normal;
+        }
+
+        @font-face {
+          font-family: "Century Gothic";
+          src: url("../fonts/century-gothic/gothici.ttf");
+          font-weight: 400;
+          font-style: italic;
+        }
+
+        @font-face {
+          font-family: "Century Gothic";
+          src: url("../fonts/century-gothic/gothicb.ttf");
+          font-weight: 700;
+          font-style: normal;
+        }
+
+        /* Universal */
+
+        body, text {
+          font-family: Century Gothic, Raleway, Helvetica, sans-serif;
+          margin: 0;
+        }
+
+        svg {
+          display: block;
+          margin: 0 auto;
+          float: right;
+        }
+
+        #main {
+          width: 750px;
+          float: right;
+        }
+
+        /* Graphs */
+
+        .axis path {
+          opacity: 0;
+        }
+
+        .axis text {
+          fill: gray;
+        }
+
+        .x text {
+          font-size: 12px;
+        }
+
+        .legend text {
+          text-anchor: end;
+          font-size: 10px;
+          fill: gray;
+        }
+
+        .label {
+          font-size: 10px;
+          text-anchor: middle;
+        }
+
+        rect {
+          opacity: 1;
+        }
+
+        .line {
+          fill: none;
+          opacity: 0.8;
+        }
+
+        .dashline {
+          stroke: gray;
+          stroke-dasharray: 2, 4;
+        }
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            var allData = [{"label":"199193","univ_name":"North Carolina State University","instate":{"visit":52422.2,"nonvisit":52628.23639},"outofstate":{"visit":121438.6,"nonvisit":66663.457785}},{"label":"186380","univ_name":"Rutgers University-New Brunswick","instate":{"visit":95307.692,"nonvisit":86352.911565},"outofstate":{"visit":112792.882619,"nonvisit":65718.674474}},{"label":"196097","univ_name":"Stony Brook University","instate":{"visit":103229.445175,"nonvisit":63634.32392},"outofstate":{"visit":110006.887097,"nonvisit":66386.792241}},{"label":"100751","univ_name":"University of Alabama","instate":{"visit":54498.662162,"nonvisit":44384.268692},"outofstate":{"visit":89682.90241,"nonvisit":59718.80185}},{"label":"106397","univ_name":"University of Arkansas","instate":{"visit":46534.429752,"nonvisit":44664.242718},"outofstate":{"visit":86882.893293,"nonvisit":58660.563206}},{"label":"110635","univ_name":"University of California-Berkeley","instate":{"visit":85986.915289,"nonvisit":67088.435455},"outofstate":{"visit":104351.789326,"nonvisit":62042.509686}},{"label":"110653","univ_name":"University of California-Irvine","instate":{"visit":68891.556277,"nonvisit":70728.462785},"outofstate":{"visit":93321.662162,"nonvisit":65924.552371}},{"label":"201885","univ_name":"University of Cincinnati","instate":{"visit":66755.937861,"nonvisit":52897.171111},"outofstate":{"visit":101371.50375,"nonvisit":64285.62807}},{"label":"126614","univ_name":"University of Colorado-Boulder","instate":{"visit":74630.52514,"nonvisit":60883.403101},"outofstate":{"visit":114995.135017,"nonvisit":62566.324197}},{"label":"139959","univ_name":"University of Georgia","instate":{"visit":61054.159884,"nonvisit":50209.620833},"outofstate":{"visit":102412.300403,"nonvisit":62507.686605}},{"label":"155317","univ_name":"University of Kansas","instate":{"visit":64612.27512,"nonvisit":56826.519048},"outofstate":{"visit":96003.386728,"nonvisit":61899.215493}},{"label":"166629","univ_name":"University of Massachusetts-Amherst","instate":{"visit":94947.42723,"nonvisit":82445.687023},"outofstate":{"visit":114605.125506,"nonvisit":63816.231043}},{"label":"181464","univ_name":"University of Nebraska-Lincoln","instate":{"visit":63385.185446,"nonvisit":62440.321429},"outofstate":{"visit":85046.661905,"nonvisit":60833.32141}},{"label":"215293","univ_name":"University of Pittsburgh","instate":{"visit":78652.713514,"nonvisit":59081.980519},"outofstate":{"visit":113482.743023,"nonvisit":63541.023846}},{"label":"218663","univ_name":"University of South Carolina-Columbia","instate":{"visit":53132.021186,"nonvisit":44721.729412},"outofstate":{"visit":104793.580139,"nonvisit":63132.735017}}];
+
+            // Prepping data...
+
+            var instate = [],
+                outofstate = [];
+
+            allData.forEach(function(univ) {
+                instate.push({
+                    label: univ.label,
+                    visit: univ.instate.visit,
+                    nonvisit: univ.instate.nonvisit
+                });
+                outofstate.push({
+                    label: univ.label,
+                    visit: univ.outofstate.visit,
+                    nonvisit: univ.outofstate.nonvisit
+                });
+            });
+
+            console.log(instate, outofstate);
+
+            // Defining scales...
+
+            var totalWidth = 680,
+                totalHeight = 900;
+
+            var topMargin = 80,
+                chartWidth = 200,
+                chartHeight = 800,
+                col1 = 250,
+                col2 = 450,
+                middleSpace = 0.1,
+                xMax = 120000,
+                labels = ['Visited Public HS', 'Non-Visited Public HS'],
+                bands = outofstate.map(function(d) { return d.label; }),
+                keys = ['visit', 'nonvisit'];
+
+            var xScale = d3.scaleLinear()
+                .domain([0, xMax])
+                .range([0, chartWidth]);
+
+            var yScale = d3.scaleBand()
+                .domain(bands)
+                .rangeRound([0, chartHeight])
+                .paddingInner(0.15);  // space between bars of bars
+
+            var yBandScale = d3.scaleBand()
+                .domain(keys)
+                .rangeRound([0, yScale.bandwidth()])
+                .padding(0.05);  // space between bars within a set
+
+            var colorScale = d3.scaleOrdinal()
+                .domain(keys)
+                .range(['#FFAE3B', '#003049']);
+
+            // Attaching things...
+
+            var svg = d3.select('#income').append('svg')
+                .attr('width', totalWidth)
+                .attr('height', totalHeight);
+
+            var g_univ = svg.append('g')
+                .attr('transform', 'translate(0, ' + topMargin + ')');
+
+            g_univ.selectAll('text')
+                .data(allData)
+                .enter()
+                .append('text')
+                .text(function(d) { return d.univ_name; })
+                .style('font-size', '13px')
+                .attr('dy', '0.35em')
+                .attr('transform', function(d) { return 'translate(0, ' + (yScale(d.label) + yScale.bandwidth() / 2) + ')'; });
+
+            var g_instate = svg.append('g')
+                .attr('transform', 'translate(' + col1 + ', ' + topMargin + ')');
+
+            g_instate.append('text')
+                .style('font-size', '13px')
+                .style('font-weight', 600)
+                .style('text-anchor', 'middle')
+                .text('In-State')
+                .attr('transform', 'translate(' + chartWidth / 2 + ', -15)');
+
+            var sets = g_instate.append('g')  // add left bars
+                .selectAll('g')
+                .data(instate)
+                .enter()
+                .append('g')
+                .attr('transform', function(d) { return 'translate(0, ' + yScale(d.label) + ')'; });
+
+            var bars = sets.selectAll('g')
+                .data(function(d) { return keys.map(function(k) { return {key: k, val: d[k], label: d.label}; }); })
+                .enter()
+                .append('g');
+
+            bars.append('rect')
+                .attr('width', function(d) { return xScale(d.val); })
+                .attr('height', yBandScale.bandwidth())
+                .attr('x', function(d) { return chartWidth - xScale(d.val) - middleSpace; })
+                .attr('y', function(d) { return yBandScale(d.key); })
+                .attr('fill', function(d) { return colorScale(d.key); });
+
+            bars.append('text')
+                .classed('label', true)
+                .attr('x', function(d) { return chartWidth - xScale(d.val) - 3; })
+                .attr('y', function(d) { return yBandScale(d.key) + yBandScale.bandwidth() / 2 ; })
+                .attr('dy', '0.35em')
+                .style('text-anchor', 'end')
+                .text(function(d) { return Math.round(d.val / 1000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') + 'k' });
+
+            var g_outofstate = svg.append('g')
+                .attr('transform', 'translate(' + col2 + ', ' + topMargin + ')');
+
+            g_outofstate.append('text')
+                .style('font-size', '13px')
+                .style('font-weight', 900)
+                .style('text-anchor', 'middle')
+                .text('Out-of-State')
+                .attr('transform', 'translate(' + chartWidth / 2 + ', -15)');
+
+            var sets2 = g_outofstate.append('g')  // add right bars
+                .selectAll('g')
+                .data(outofstate)
+                .enter()
+                .append('g')
+                .attr('transform', function(d) { return 'translate(0, ' + yScale(d.label) + ')'; });
+
+            var bars2 = sets2.selectAll('g')
+                .data(function(d) { return keys.map(function(k) { return {key: k, val: d[k], label: d.label}; }); })
+                .enter()
+                .append('g');
+
+            bars2.append('rect')
+                .attr('width', function(d) { return xScale(d.val); })
+                .attr('height', yBandScale.bandwidth())
+                .attr('x', middleSpace)
+                .attr('y', function(d) { return yBandScale(d.key); })
+                .attr('fill', function(d) { return colorScale(d.key); });
+
+            bars2.append('text')
+                .classed('label', true)
+                .attr('x', function(d) { return xScale(d.val) + 3; })
+                .attr('y', function(d) { return yBandScale(d.key) + yBandScale.bandwidth() / 2 ; })
+                .attr('dy', '0.35em')
+                .style('text-anchor', 'start')
+                .text(function(d) { return Math.round(d.val / 1000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') + 'k' });
+
+            g_outofstate.append('line')  // center line at $0k
+                .classed('dashline', true)
+                .attr('x1', 0)
+                .attr('y1', 0)
+                .attr('x2', 0)
+                .attr('y2', chartHeight);
+
+            g_outofstate.append('text')
+                .classed('label', true)
+                .attr('transform', 'translate(0, -5)')
+                .text('$0k');
+
+            var legend = svg.append('g')  // legend
+                .attr('transform', 'translate(0, ' + (topMargin - 70) + ')')
+                .selectAll('g')
+                .data(labels)
+                .enter()
+                .append('g')
+                .attr('transform', function(d, i) { return 'translate(0, ' + i * (yBandScale.bandwidth() + 1) + ')'; });
+
+            legend.append('rect')
+                .attr('width', yBandScale.bandwidth())
+                .attr('height', yBandScale.bandwidth())
+                .style('fill', colorScale);
+
+            legend.append('text')
+                .style('font-size', 12)
+                .style('fill', 'gray')
+                .attr('x', yBandScale.bandwidth() + 5)
+                .attr('y', yBandScale.bandwidth() / 2)
+                .attr('dy', '0.35em')
+                .text(function(d) { return d; });
+        });
+    </script>
+</head>
+<body>
+    <div id="main">
+        <div id="income"></div>
+    </div>
+</body>
+</html>

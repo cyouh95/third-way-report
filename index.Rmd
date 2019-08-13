@@ -29,7 +29,11 @@ library(captioner)
 
 fig_nums <- captioner::captioner(prefix = 'Figure')
 
-fig_nums(name = 'funnel_alt', caption = 'Enrollment Management Funnel')
+fig_nums(name = 'funnel_alt', caption = 'Enrollment management funnel')
+fig_nums(name = 'income_graph', caption = 'Average median household income of visited vs not visited public high schools')
+fig_nums(name = 'income_map', caption = 'Visits to metro areas by median household income')
+fig_nums(name = 'race_graph', caption = 'Average racial composition of visited vs not visited high schools by in-state, out-of-state')
+fig_nums(name = 'race_map', caption = 'Visits to metro areas by percent Black/Latinx/Native')
 
 tbl_nums <- captioner::captioner(prefix = 'Table')
 
@@ -153,19 +157,28 @@ While prior research finds that off-campus recruiting influences the application
 
 ###### `r tbl_nums('event_count')`
 
-<iframe src="./assets/tables/event_count.html" width="955" height="400" class="tableau offset"></iframe>
+<iframe src="./assets/tables/event_count.html" width="955" height="500" class="tableau offset"></iframe>
 
 ##### Income
 
-<img src="./assets/graphs/graph_income.png" />
+###### `r fig_nums('income_graph')`
+
+<iframe src="./assets/graphs/third_way_income.html" width="750" height="920" class="tableau offset"></iframe>
+
+###### `r fig_nums('income_map')`
 
 <iframe src="./assets/maps/map_income.html" width="955" height="700" class="tableau offset"></iframe>
 
 ##### Race
 
-<img src="./assets/graphs/graph_race.png" />
+###### `r fig_nums('race_graph')`
+
+<iframe src="./assets/graphs/third_way_race.html" width="750" height="1000" class="tableau offset"></iframe>
+
+###### `r fig_nums('race_map')`
 
 <iframe src="./assets/maps/map_race.html" width="955" height="700" class="tableau offset"></iframe>
+
 
 ## Policy Implications
 

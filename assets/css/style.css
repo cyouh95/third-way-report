@@ -9,21 +9,21 @@
 
 @font-face {
   font-family: "Century Gothic";
-  src: url("../assets/fonts/century-gothic/gothicr.ttf");
+  src: url("../fonts/century-gothic/gothicr.ttf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Century Gothic";
-  src: url("../assets/fonts/century-gothic/gothici.ttf");
+  src: url("../fonts/century-gothic/gothici.ttf");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Century Gothic";
-  src: url("../assets/fonts/century-gothic/gothicb.ttf");
+  src: url("../fonts/century-gothic/gothicb.ttf");
   font-weight: 700;
   font-style: normal;
 }
