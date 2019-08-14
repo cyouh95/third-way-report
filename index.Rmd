@@ -151,6 +151,8 @@ While prior research finds that off-campus recruiting influences the application
 
 #### Data and Methods
 
+<iframe src="./assets/tables/data_appendix.html" width="955" height="400" class="tableau offset"></iframe>
+
 #### Results
 
 ##### Overall Patterns
