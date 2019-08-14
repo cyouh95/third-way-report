@@ -92,16 +92,14 @@ function(el, x, choices) {
   let set_active_univ = function() {
     
     // hide all pins
-    $('.univ-pin, div[title^="univ-pin"], img[title^="univ-"]').css('display', 'none');
+    $('.univ-pin, div[title^="univ-pin"]').css('display', 'none');
 
     // display only active univ's pins
     $('div[title^="univ-pin-' + active_attr.active_univ + '"]').css('display', 'inherit');
     
     $('.univ-' + active_attr.active_metro + '-' + active_attr.active_univ).css('display', 'inherit');
     $('.univ-shared-' + active_attr.active_metro).css('display', 'inherit');
-    
-    $('img[title^="univ-' + active_attr.active_metro + '-' + active_attr.active_univ + '"]').css('display', 'inherit');
-    $('img[title^="univ-shared-' + active_attr.active_metro + '"]').css('display', 'inherit');
+
   };
   
   // handle selection text update

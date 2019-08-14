@@ -9,6 +9,7 @@ library(formattable)
 library(rgdal)
 library(tigris)
 library(rgeos)
+library(rmapshaper)
 library(htmlwidgets)
 
 #################### UNIVERSITY SAMPLE
@@ -166,10 +167,11 @@ hs <- merge(x = hs, y = msa, by="zip_code", all.x=TRUE)
 #################### LOAD SHAPE FILES
 
 # load US zip shape file
-uspoly <- readOGR('./assets/data/us_geodata/cb_2016_us_zcta510_500k.shp')
+uspoly_shp <- readOGR('./assets/data/us_geodata/cb_2016_us_zcta510_500k.shp')
+uspoly_shp_simplified <- ms_simplify(uspoly_shp)
 
 # merge to zip
-uspoly <- merge(uspoly, zip, by.x="ZCTA5CE10", by.y="zip", all.x = TRUE)
+uspoly <- merge(uspoly_shp_simplified, zip, by.x="ZCTA5CE10", by.y="zip", all.x = TRUE)
 
 #################### CREATE ICONS
 
@@ -247,7 +249,15 @@ third_way_map <- function(univs, metros) {
 
     # spatial polygon of MSA
     msapoly <- subset(uspoly, (cbsa_1 == metro | cbsa_2 == metro | cbsa_3 == metro | cbsa_4 == metro))
-    data[[metro]]$cbsa_shape <- msapoly
+    
+    msa_shape <- msapoly
+    msa_shape@polygons <- list()
+    poly_ids <- names(msapoly@polygons)
+    for (idx in seq_along(poly_ids)) {
+      msa_shape@polygons[[idx]] <- msapoly@polygons[[poly_ids[idx]]]
+    }
+
+    data[[metro]]$cbsa_shape <- msa_shape
 
     # outline shape of MSA
     msa_union <- gUnaryUnion(msapoly, id=NULL)
@@ -387,7 +397,7 @@ third_way_map <- function(univs, metros) {
   
   for (metro in metros) {
     print(metro)
-    
+
     # add zip overlays
     m <- m %>% addPolylines(data = data[[metro]]$cbsa_outline, stroke = TRUE, color = "black", weight = 3, group = "MSA", options = c(className = paste0("metro-shape metro-", metro))) %>%
                addPolygons(data = data[[metro]]$cbsa_shape, stroke = FALSE, fillOpacity = 0.8, smoothFactor = 0.2, color = ~color_income(inc_brks), popup = data[[metro]]$popup_income, group = "MSA by Median Household Income", options = pathOptions(className = paste0("metro-shape metro-", metro))) %>%
@@ -396,15 +406,15 @@ third_way_map <- function(univs, metros) {
     
     # add shared non-visit markers
     addCircleMarkers(data = data[[metro]]$pubhs_nonvisits, lng = ~longitude, lat = ~latitude, group = 'Non-Visited Public High Schools',
-                     radius = 2, fill = TRUE, fillOpacity = 0, opacity = 0.8, weight = 1, color = 'red',
+                     radius = 2, fill = TRUE, fillOpacity = 0, opacity = 1, weight = 1, color = '#2267ff',
                      popup = data[[metro]]$popup_pubhsnonvisit, options = pathOptions(className = paste0("univ-pin univ-shared-", metro))) %>%
 
     addCircleMarkers(data = data[[metro]]$privhs_nonvisits, lng = ~longitude, lat = ~latitude, group = 'Non-Visited Private High Schools',
-                     radius = 2, fill = TRUE, fillOpacity = 0, opacity = 0.8, weight = 1, color = 'red',
+                     radius = 2, fill = TRUE, fillOpacity = 0, opacity = 1, weight = 1, color = '#d16822',
                      popup = data[[metro]]$popup_privhsnonvisit, options = pathOptions(className = paste0("univ-pin univ-shared-", metro))) %>%
 
     addCircleMarkers(data = data[[metro]]$cc_nonvisits, lng = ~longitude, lat = ~latitude, group = 'Non-Visited Community Colleges',
-                     radius = 2, fill = TRUE, fillOpacity = 0, opacity = 0.8, weight = 1, color = 'red',
+                     radius = 2, fill = TRUE, fillOpacity = 0, opacity = 1, weight = 1, color = 'green',
                      popup = data[[metro]]$popup_ccnonvisit, options = pathOptions(className = paste0("univ-pin univ-shared-", metro)))
 
     # addMarkers(data = data[[metro]]$pubhs_nonvisits, lng = ~longitude, lat = ~latitude, icon = redXIcon, popup = data[[metro]]$popup_pubhsnonvisit, group = "Non-Visited Public High Schools", options = markerOptions(title = paste0("univ-shared-", metro))) %>%
@@ -416,32 +426,32 @@ third_way_map <- function(univs, metros) {
       
       # add visit markers
       m <- m %>% addCircleMarkers(data = data[[metro]][[univ]]$pubhs_visits, lng = ~longitude, lat = ~latitude, group = 'Public High School Visits',
-                                  radius = 3, fill = TRUE, fillOpacity = 1, weight = 1, color = 'blue',  # '#42a9c6'
+                                  radius = 3, fill = TRUE, fillOpacity = 1, weight = 1, color = 'white', fillColor = 'blue',  # '#42a9c6'
                                   popup = data[[metro]][[univ]]$popup_pubhsvisit, options = pathOptions(className = paste0("univ-pin univ-", metro, "-", univ))) %>%
           
       addCircleMarkers(data = data[[metro]][[univ]]$privhs_visits, lng = ~longitude, lat = ~latitude, group = 'Private High School Visits',
-                       radius = 3, fill = TRUE, fillOpacity = 1, weight = 1, color = '#FF8333',  # '#d16822'
+                       radius = 3, fill = TRUE, fillOpacity = 1, weight = 1, color = 'white', fillColor = '#ffa01c',  # '#d16822'
                        popup = data[[metro]][[univ]]$popup_privhsvisit, options = pathOptions(className = paste0("univ-pin univ-", metro, "-", univ))) %>%
         
       addCircleMarkers(data = data[[metro]][[univ]]$cc_visits, lng = ~longitude, lat = ~latitude, group = 'Community College Visits',
-                       radius = 3, fill = TRUE, fillOpacity = 1, weight = 1, color = '#4FFF33',  # '#30af37'
+                       radius = 3, fill = TRUE, fillOpacity = 1, weight = 1, color = 'white', fillColor = '#009614',  # '#30af37'
                        popup = data[[metro]][[univ]]$popup_ccvisit, options = pathOptions(className = paste0("univ-pin univ-", metro, "-", univ))) %>%
       
       addCircleMarkers(data = data[[metro]][[univ]]$other_visits, lng = ~longitude, lat = ~latitude, group = 'Other Visits',
-                       radius = 3, fill = TRUE, fillOpacity = 1, weight = 1, color = '#EC33FF',  # '#8030d1'
+                       radius = 3, fill = TRUE, fillOpacity = 1, weight = 1, color = 'white', fillColor = '#fc00f8',  # '#8030d1'
                        popup = data[[metro]][[univ]]$popup_othervisit, options = pathOptions(className = paste0("univ-pin univ-", metro, "-", univ))) %>%
       
       # add non-visit markers (unique)
       addCircleMarkers(data = data[[metro]][[univ]]$pubhs_nonvisits, lng = ~longitude, lat = ~latitude, group = 'Non-Visited Public High Schools',
-                       radius = 2, fill = TRUE, fillOpacity = 0, opacity = 0.8, weight = 1, color = 'red',
+                       radius = 2, fill = TRUE, fillOpacity = 0, opacity = 1, weight = 1, color = '#2267ff',
                        popup = data[[metro]][[univ]]$popup_pubhsnonvisit, options = pathOptions(className = paste0("univ-pin univ-", metro, "-", univ))) %>%
 
       addCircleMarkers(data = data[[metro]][[univ]]$privhs_nonvisits, lng = ~longitude, lat = ~latitude, group = 'Non-Visited Private High Schools',
-                       radius = 2, fill = TRUE, fillOpacity = 0, opacity = 0.8, weight = 1, color = 'red',
+                       radius = 2, fill = TRUE, fillOpacity = 0, opacity = 1, weight = 1, color = '#d16822',
                        popup = data[[metro]][[univ]]$popup_privhsnonvisit, options = pathOptions(className = paste0("univ-pin univ-", metro, "-", univ))) %>%
 
       addCircleMarkers(data = data[[metro]][[univ]]$cc_nonvisits, lng = ~longitude, lat = ~latitude, group = 'Non-Visited Community Colleges',
-                       radius = 2, fill = TRUE, fillOpacity = 0, opacity = 0.8, weight = 1, color = 'red',
+                       radius = 2, fill = TRUE, fillOpacity = 0, opacity = 1, weight = 1, color = 'green',
                        popup = data[[metro]][[univ]]$popup_ccnonvisit, options = pathOptions(className = paste0("univ-pin univ-", metro, "-", univ)))
         
       # addMarkers(data = data[[metro]][[univ]]$pubhs_nonvisits, lng = ~longitude, lat = ~latitude, icon = redXIcon, popup = data[[metro]][[univ]]$popup_pubhsnonvisit, group = "Non-Visited Public High Schools", options = markerOptions(title = paste0("univ-", metro, "-", univ))) %>%
@@ -514,5 +524,8 @@ metros <- c(metros, '16980')  # Chicago
 
 third_way_map(c('215293', '110653'), c('16980', '35620'))
 
+# .eq(1) for base layer selection
 saveWidget(third_way_map(univs, metros), 'map_income.html', background = 'transparent')
+
+# .eq(3) for base layer selection
 saveWidget(third_way_map(univs, metros), 'map_race.html', background = 'transparent')
