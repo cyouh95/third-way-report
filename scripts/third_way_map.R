@@ -378,15 +378,12 @@ third_way_map <- function(univs, metros) {
       onClick=JS("function(btn, map){ let zoom = $(btn.button).attr('data-national'); $('.custom-control').slideUp(); if (zoom === 'true') { let $sel = $('input[name=\"metro-choice\"]:checked'); map.setView([$sel.attr('data-lat'), $sel.attr('data-lng')], 8.2); $(btn.button).attr('data-national', false); $('#view-btn').html('National View'); } else { map.setView([39.828, -98.580], 4); $(btn.button).attr('data-national', true); $('#view-btn').html('MSA View'); }}"))) %>%
     
     addEasyButton(easyButton(
-      icon="fa-globe", title="Select Metro Area",
-      onClick=JS("function(btn, map){ $('.custom-control').not('#metro-control').slideUp(); $('#metro-control').slideToggle(); }"))) %>%
-    
-    addEasyButton(easyButton(
       icon="fa-university", title="Select University",
       onClick=JS("function(btn, map){ $('.custom-control').not('#univ-control').slideUp(); $('#univ-control').slideToggle(); }"))) %>%
     
-    addMeasure(position = "bottomright",
-               primaryLengthUnit = "miles")
+    addEasyButton(easyButton(
+      icon="fa-globe", title="Select Metro Area",
+      onClick=JS("function(btn, map){ $('.custom-control').not('#metro-control').slideUp(); $('#metro-control').slideToggle(); }")))
   
   for (univ in univs) {
     
@@ -417,10 +414,6 @@ third_way_map <- function(univs, metros) {
                      radius = 2, fill = TRUE, fillOpacity = 0, opacity = 1, weight = 1, color = 'green',
                      popup = data[[metro]]$popup_ccnonvisit, options = pathOptions(className = paste0("univ-pin univ-shared-", metro)))
 
-    # addMarkers(data = data[[metro]]$pubhs_nonvisits, lng = ~longitude, lat = ~latitude, icon = redXIcon, popup = data[[metro]]$popup_pubhsnonvisit, group = "Non-Visited Public High Schools", options = markerOptions(title = paste0("univ-shared-", metro))) %>%
-    # addMarkers(data = data[[metro]]$privhs_nonvisits, lng = ~longitude, lat = ~latitude, icon = redXIcon, popup = data[[metro]]$popup_privhsnonvisit, group = "Non-Visited Private High Schools", options = markerOptions(title = paste0("univ-shared-", metro))) %>%
-    # addMarkers(data = data[[metro]]$cc_nonvisits, lng = ~longitude, lat = ~latitude, icon = redXIcon, popup = data[[metro]]$popup_ccnonvisit, group = "Non-Visited Community Colleges", options = markerOptions(title = paste0("univ-shared-", metro)))
-    
     for (univ in univs) {
       print(univ)
       
@@ -453,11 +446,7 @@ third_way_map <- function(univs, metros) {
       addCircleMarkers(data = data[[metro]][[univ]]$cc_nonvisits, lng = ~longitude, lat = ~latitude, group = 'Non-Visited Community Colleges',
                        radius = 2, fill = TRUE, fillOpacity = 0, opacity = 1, weight = 1, color = 'green',
                        popup = data[[metro]][[univ]]$popup_ccnonvisit, options = pathOptions(className = paste0("univ-pin univ-", metro, "-", univ)))
-        
-      # addMarkers(data = data[[metro]][[univ]]$pubhs_nonvisits, lng = ~longitude, lat = ~latitude, icon = redXIcon, popup = data[[metro]][[univ]]$popup_pubhsnonvisit, group = "Non-Visited Public High Schools", options = markerOptions(title = paste0("univ-", metro, "-", univ))) %>%
-      # addMarkers(data = data[[metro]][[univ]]$privhs_nonvisits, lng = ~longitude, lat = ~latitude, icon = redXIcon, popup = data[[metro]][[univ]]$popup_privhsnonvisit, group = "Non-Visited Private High Schools", options = markerOptions(title = paste0("univ-", metro, "-", univ))) %>%
-      # addMarkers(data = data[[metro]][[univ]]$cc_nonvisits, lng = ~longitude, lat = ~latitude, icon = redXIcon, popup = data[[metro]][[univ]]$popup_ccnonvisit, group = "Non-Visited Community Colleges", options = markerOptions(title = paste0("univ-", metro, "-", univ)))
-      
+
     }
   }
   
@@ -524,8 +513,8 @@ metros <- c(metros, '16980')  # Chicago
 
 third_way_map(c('215293', '110653'), c('16980', '35620'))
 
-# .eq(1) for base layer selection
+# uncomment reset_overlays_income();
 saveWidget(third_way_map(univs, metros), 'map_income.html', background = 'transparent')
 
-# .eq(3) for base layer selection
+# uncomment reset_overlays_race();
 saveWidget(third_way_map(univs, metros), 'map_race.html', background = 'transparent')

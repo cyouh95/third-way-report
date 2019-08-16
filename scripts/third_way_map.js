@@ -67,8 +67,11 @@ function(el, x, choices) {
     $('button[title="Toggle View"]').attr('data-national', false);
     $('#view-btn').html('National View');
     
-    reset_overlays();
     update_sel_text();
+    
+    reset_overlays();
+    // reset_overlays_income();
+    // reset_overlays_race();
   });
   
   let set_active_metro = function() {
@@ -133,7 +136,7 @@ function(el, x, choices) {
   });
   
   let reset_overlays = function() {
-    $('input[name=leaflet-base-layers]').first().trigger('click');
+    // $('input[name=leaflet-base-layers]').first().trigger('click');
     
     $('.leaflet-control-layers-overlays .leaflet-control-layers-selector').each(function(e) {
       let $this = $(this);
@@ -142,6 +145,17 @@ function(el, x, choices) {
       }
     });
     
+    // Check public HS visit + nonvisit
+    $('.leaflet-control-layers-overlays .leaflet-control-layers-selector').first().trigger('click');
+    $('.leaflet-control-layers-overlays .leaflet-control-layers-selector').eq(1).trigger('click');
+  };
+  
+  let reset_overlays_income = function() {
+    $('.leaflet-control-layers-base .leaflet-control-layers-selector').eq(1).trigger('click');
+  };
+  
+  let reset_overlays_race = function() {
+    $('.leaflet-control-layers-base .leaflet-control-layers-selector').eq(3).trigger('click');
   };
   
   // default settings on load
@@ -155,10 +169,5 @@ function(el, x, choices) {
   
   $('input[data-cbsa="' + active_attr.active_metro + '"]').trigger('click');
   $('input[data-ipeds="' + active_attr.active_univ + '"]').trigger('click');
-  
-  // layers selected by default
-  // $('.leaflet-control-layers-base .leaflet-control-layers-selector').eq(1).trigger('click');
-  // $('.leaflet-control-layers-overlays .leaflet-control-layers-selector').first().trigger('click');
-  // $('.leaflet-control-layers-overlays .leaflet-control-layers-selector').eq(1).trigger('click');
 
 }
