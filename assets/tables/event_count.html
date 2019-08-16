@@ -2,11 +2,33 @@
 <head>
   <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900&display=swap" rel="stylesheet">
   <style>
+    @font-face {
+      font-family: "Century Gothic";
+      src: url("../fonts/century-gothic/gothicr.ttf");
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "Century Gothic";
+      src: url("../fonts/century-gothic/gothici.ttf");
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    @font-face {
+      font-family: "Century Gothic";
+      src: url("../fonts/century-gothic/gothicb.ttf");
+      font-weight: 700;
+      font-style: normal;
+    }
+    
     table {
-      font-family: Merriweather;
+      font-family: "Century Gothic", Merriweather;
       font-size: 13px;
       width: 100%;
       border-left: #FFAE3B 10px solid;
+      border-collapse: collapse;
     }
     table tr:last-child th {
       text-align: center;
@@ -20,6 +42,9 @@
     table tr td:first-child {
       text-align: left;
       padding-left: 10px;
+    }
+    table tr:nth-of-type(2) th:not(:first-child) {
+      border-bottom: gray 1px solid;
     }
     .bold {
       font-weight: 700;
@@ -44,20 +69,20 @@
             <th style="width:6%">Priv HS</th>
             <th style="width:6%">Other</th>
             <th class="bold" style="width:6%">Total</th>
-            <th class="blank" style="width:2%"></th>
+            <th class="blank" style="width:4%"></th>
             <th style="width:6%">Pub HS</th>
             <th style="width:6%">Priv HS</th>
             <th style="width:6%">CC</th>
             <th style="width:6%">Other</th>
             <th class="bold" style="width:6%">Total</th>
-            <th class="blank" style="width:1%"></th>
+            <th class="blank" style="width:2%"></th>
             <th style="width:10%"></th>
         </tr>
     </thead>
     <tbody>
 
         <tr>
-            <td class="bold">North Carolina State University</td>
+            <td>North Carolina State University</td>
             <td style="padding-right:1%">72</td>
             <td style="padding-right:2%">20</td>
             <td style="padding-right:2%">32</td>
@@ -73,7 +98,7 @@
         </tr>
 
         <tr>
-            <td class="bold">Rutgers University-New Brunswick</td>
+            <td>Rutgers University-New Brunswick</td>
             <td style="padding-right:1%">560</td>
             <td style="padding-right:2%">231</td>
             <td style="padding-right:2%">163</td>
@@ -89,7 +114,7 @@
         </tr>
 
         <tr>
-            <td class="bold">Stony Brook University</td>
+            <td>Stony Brook University</td>
             <td style="padding-right:1%">496</td>
             <td style="padding-right:2%">107</td>
             <td style="padding-right:2%">63</td>
@@ -105,7 +130,7 @@
         </tr>
 
         <tr>
-            <td class="bold">University of Alabama</td>
+            <td>University of Alabama</td>
             <td style="padding-right:1%">2,312</td>
             <td style="padding-right:2%">934</td>
             <td style="padding-right:2%">711</td>
@@ -121,7 +146,7 @@
         </tr>
 
         <tr>
-            <td class="bold">University of Arkansas</td>
+            <td>University of Arkansas</td>
             <td style="padding-right:1%">483</td>
             <td style="padding-right:2%">204</td>
             <td style="padding-right:2%">101</td>
@@ -137,7 +162,7 @@
         </tr>
 
         <tr>
-            <td class="bold">University of California-Berkeley</td>
+            <td>University of California-Berkeley</td>
             <td style="padding-right:1%">188</td>
             <td style="padding-right:2%">134</td>
             <td style="padding-right:2%">98</td>
@@ -153,7 +178,7 @@
         </tr>
 
         <tr>
-            <td class="bold">University of California-Irvine</td>
+            <td>University of California-Irvine</td>
             <td style="padding-right:1%">77</td>
             <td style="padding-right:2%">40</td>
             <td style="padding-right:2%">55</td>
@@ -169,7 +194,7 @@
         </tr>
 
         <tr>
-            <td class="bold">University of Cincinnati</td>
+            <td>University of Cincinnati</td>
             <td style="padding-right:1%">491</td>
             <td style="padding-right:2%">204</td>
             <td style="padding-right:2%">120</td>
@@ -185,7 +210,7 @@
         </tr>
 
         <tr>
-            <td class="bold">University of Colorado-Boulder</td>
+            <td>University of Colorado-Boulder</td>
             <td style="padding-right:1%">607</td>
             <td style="padding-right:2%">362</td>
             <td style="padding-right:2%">133</td>
@@ -201,7 +226,7 @@
         </tr>
 
         <tr>
-            <td class="bold">University of Georgia</td>
+            <td>University of Georgia</td>
             <td style="padding-right:1%">287</td>
             <td style="padding-right:2%">233</td>
             <td style="padding-right:2%">67</td>
@@ -217,7 +242,7 @@
         </tr>
 
         <tr>
-            <td class="bold">University of Kansas</td>
+            <td>University of Kansas</td>
             <td style="padding-right:1%">613</td>
             <td style="padding-right:2%">213</td>
             <td style="padding-right:2%">178</td>
@@ -233,7 +258,7 @@
         </tr>
 
         <tr>
-            <td class="bold">University of Massachusetts-Amherst</td>
+            <td>University of Massachusetts-Amherst</td>
             <td style="padding-right:1%">504</td>
             <td style="padding-right:2%">230</td>
             <td style="padding-right:2%">50</td>
@@ -249,7 +274,7 @@
         </tr>
 
         <tr>
-            <td class="bold">University of Nebraska-Lincoln</td>
+            <td>University of Nebraska-Lincoln</td>
             <td style="padding-right:1%">646</td>
             <td style="padding-right:2%">104</td>
             <td style="padding-right:2%">125</td>
@@ -265,7 +290,7 @@
         </tr>
 
         <tr>
-            <td class="bold">University of Pittsburgh</td>
+            <td>University of Pittsburgh</td>
             <td style="padding-right:1%">559</td>
             <td style="padding-right:2%">210</td>
             <td style="padding-right:2%">137</td>
@@ -281,7 +306,7 @@
         </tr>
 
         <tr>
-            <td class="bold">University of South Carolina-Columbia</td>
+            <td>University of South Carolina-Columbia</td>
             <td style="padding-right:1%">676</td>
             <td style="padding-right:2%">328</td>
             <td style="padding-right:2%">241</td>
