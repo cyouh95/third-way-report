@@ -43,11 +43,16 @@
       text-align: left;
       padding-left: 10px;
     }
-    table tr:nth-of-type(2) th:not(:first-child) {
+    table tr:nth-of-type(2) th:not(:first-child),
+    table tbody tr:last-child td:not(:first-child) {
       border-bottom: gray 1px solid;
     }
     .bold {
       font-weight: 700;
+    }
+    tbody .bold {
+      font-weight: 700;
+      color: #444;
     }
   </style>
 </head>
