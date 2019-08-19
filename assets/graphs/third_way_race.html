@@ -41,14 +41,6 @@
           width: 750px;
           float: right;
         }
-        
-        p {
-          font-family: Merriweather, serif;
-          font-size: 14px;
-          color: gray;
-          padding-right: 175px;
-          float: right;
-        }
 
         /* Buttons */
 
@@ -105,6 +97,14 @@
         rect {
           opacity: 1;
         }
+        
+        p {
+          font-family: Merriweather, serif;
+          font-size: 14px;
+          color: gray;
+          padding-right: 175px;
+          float: right;
+        }
     </style>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -141,10 +141,11 @@
 
             var totalSidebarWidth = 400,
                 totalContentWidth = 510,
-                totalHeight = 900;
+                totalSidebarHeight = 900,
+                totalContentHeight = 850;
 
             var topSidebarMargin = 70,
-                topContentMargin = 85,
+                topContentMargin = 45,
                 chartWidth = 100,
                 chartHeight = 800,
                 labels_pub = ['Visited Public HS', 'Non-Visited Public HS'],
@@ -179,7 +180,8 @@
 
             var svg = d3.select('#sidebar').append('svg')
                 .attr('width', totalSidebarWidth)
-                .attr('height', totalHeight);
+                .attr('height', totalSidebarHeight)
+                .attr('transform', 'translate(0, 25)');
 
             var legend = svg.append('g')  // add legend
                 .classed('labels', true)
@@ -262,7 +264,7 @@
 
             var svg2 = d3.select('#content').append('svg')
                 .attr('width', totalContentWidth)
-                .attr('height', totalHeight);
+                .attr('height', totalContentHeight);
 
             raceCategories.forEach(function(race, idx) {  // add race bars
                 var g_race = svg2.append('g')
@@ -374,6 +376,13 @@
                     .duration(400)
                     .style('opacity', 1);
             });
+
+            $('#scrollbar').scroll(function () {
+                $('#content').scrollLeft($('#scrollbar').scrollLeft());
+            });
+            $('#content').scroll(function () {
+                $('#scrollbar').scrollLeft($('#content').scrollLeft());
+            });
         });
     </script>
 </head>
@@ -390,8 +399,13 @@
             </div>
         </div>
         <div id="race">
-            <div id="sidebar" style="width: 400px; display: inline-block;"></div>
-            <div id="content" style="width: 380px; display: inline-block; overflow-x: scroll;"></div>
+            <div id="sidebar" style="width: 400px; display: inline-block; vertical-align: top;"></div>
+            <div style="display: inline-block">
+                <div id="scrollbar" style="width: 380px; overflow-x: scroll;">
+                    <div style="width: 510px; height: 35px;"></div>
+                </div>
+                <div id="content" style="width: 380px; overflow-x: scroll;"></div>
+            </div>
         </div>
     </div>
     <p><b style="color:#444;">Note:</b> Non-visited schools include only out-of-state schools in states that received at least one high school visit.</p>
