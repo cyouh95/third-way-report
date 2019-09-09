@@ -39,7 +39,7 @@ tbl_nums <- captioner::captioner(prefix = 'Table')
 
 tbl_nums(name = 'hsls_tbl1', caption = 'Number of high-achieving students by socioeconomic quintile')
 tbl_nums(name = 'hsls_tbl2', caption = 'Initial post-secondary destination of high-achieving students by socioeconomic quintile')
-tbl_nums(name = 'event_count', caption = 'Number of events by type and in-state vs. out-of-state')
+tbl_nums(name = 'event_count', caption = 'State funding and number of events by type, in-state vs. out-of-state')
 
 apndx_nums <- captioner::captioner(prefix = 'Appendix Table A', suffix = ': ', auto_space = FALSE)
 
@@ -193,7 +193,7 @@ In the text below, we present findings from our research, which collected data o
 
 ###### `r tbl_nums('event_count')`
 
-<iframe src="./assets/tables/event_count.html" width="955" height="440" class="tableau offset"></iframe>
+<iframe src="./assets/tables/event_count.html" width="955" height="500" class="tableau offset"></iframe>
 
 On the other hand, universities that received more state funding tended to have more complete coverage of their home state. For example, North Carolina State University made about twice as many in-state visits than out-of-state visits. Several universities in our sample also made a substantial number of visits to community colleges in their state. 
 

@@ -39,12 +39,17 @@
       text-align: right;
       padding: 4px 0;
     }
+    table tr td:nth-of-type(2),
+    table tr th:nth-of-type(2) {
+      text-align: left;
+      padding-left: 5px;
+    }
     table tr td:first-child {
       text-align: left;
       padding-left: 10px;
     }
-    table tr:nth-of-type(2) th:not(:first-child),
-    table tbody tr:last-child td:not(:first-child) {
+    table tr:nth-of-type(2) th:nth-child(n+2),
+    table tbody tr:last-child td:nth-child(n+2) {
       border-bottom: gray 1px solid;
     }
     .bold {
@@ -54,6 +59,12 @@
       font-weight: 700;
       color: #444;
     }
+    p {
+      font-family: Merriweather, serif;
+      font-size: 12px;
+      color: gray;
+      padding-left: 20px;
+    }
   </style>
 </head>
 
@@ -62,6 +73,7 @@
     <thead>
         <tr>
             <th class="blank"></th>
+            <th class="blank">Funding</th>
             <th colspan="4" class="blank bold">Out-of-State</th>
             <th class="blank"></th>
             <th colspan="5" class="blank bold">In-State</th>
@@ -70,24 +82,26 @@
         </tr>
         <tr>
             <th class="blank"></th>
-            <th style="width:6%">Pub HS</th>
-            <th style="width:6%">Priv HS</th>
-            <th style="width:6%">Other</th>
-            <th class="bold" style="width:6%">Total</th>
-            <th class="blank" style="width:4%"></th>
-            <th style="width:6%">Pub HS</th>
-            <th style="width:6%">Priv HS</th>
-            <th style="width:6%">CC</th>
-            <th style="width:6%">Other</th>
-            <th class="bold" style="width:6%">Total</th>
-            <th class="blank" style="width:2%"></th>
-            <th style="width:10%"></th>
+            <th style="width:9%"></th>
+            <th style="width:5.5%">Pub HS</th>
+            <th style="width:5.5%">Priv HS</th>
+            <th style="width:5.5%">Other</th>
+            <th class="bold" style="width:5.5%">Total</th>
+            <th class="blank" style="width:3%"></th>
+            <th style="width:5.5%">Pub HS</th>
+            <th style="width:5.5%">Priv HS</th>
+            <th style="width:5.5%">CC</th>
+            <th style="width:5.5%">Other</th>
+            <th class="bold" style="width:5.5%">Total</th>
+            <th class="blank" style="width:1%"></th>
+            <th style="width:9%"></th>
         </tr>
     </thead>
     <tbody>
 
         <tr>
             <td>North Carolina State University</td>
+            <td>$19.2k</td>
             <td style="padding-right:1%">72</td>
             <td style="padding-right:2%">20</td>
             <td style="padding-right:2%">32</td>
@@ -104,6 +118,7 @@
 
         <tr>
             <td>Rutgers University-New Brunswick</td>
+            <td>--------</td>
             <td style="padding-right:1%">560</td>
             <td style="padding-right:2%">231</td>
             <td style="padding-right:2%">163</td>
@@ -120,6 +135,7 @@
 
         <tr>
             <td>Stony Brook University</td>
+            <td>$21.2k</td>
             <td style="padding-right:1%">496</td>
             <td style="padding-right:2%">107</td>
             <td style="padding-right:2%">63</td>
@@ -136,6 +152,7 @@
 
         <tr>
             <td>University of Alabama</td>
+            <td>$5.3k</td>
             <td style="padding-right:1%">2,312</td>
             <td style="padding-right:2%">934</td>
             <td style="padding-right:2%">711</td>
@@ -152,6 +169,7 @@
 
         <tr>
             <td>University of Arkansas</td>
+            <td>$11.1k</td>
             <td style="padding-right:1%">483</td>
             <td style="padding-right:2%">204</td>
             <td style="padding-right:2%">101</td>
@@ -168,6 +186,7 @@
 
         <tr>
             <td>University of California-Berkeley</td>
+            <td>$12.0k</td>
             <td style="padding-right:1%">188</td>
             <td style="padding-right:2%">134</td>
             <td style="padding-right:2%">98</td>
@@ -184,6 +203,7 @@
 
         <tr>
             <td>University of California-Irvine</td>
+            <td>$10.1k</td>
             <td style="padding-right:1%">77</td>
             <td style="padding-right:2%">40</td>
             <td style="padding-right:2%">55</td>
@@ -200,6 +220,7 @@
 
         <tr>
             <td>University of Cincinnati</td>
+            <td>$6.1k</td>
             <td style="padding-right:1%">491</td>
             <td style="padding-right:2%">204</td>
             <td style="padding-right:2%">120</td>
@@ -216,6 +237,7 @@
 
         <tr>
             <td>University of Colorado-Boulder</td>
+            <td>$1.6k</td>
             <td style="padding-right:1%">607</td>
             <td style="padding-right:2%">362</td>
             <td style="padding-right:2%">133</td>
@@ -232,6 +254,7 @@
 
         <tr>
             <td>University of Georgia</td>
+            <td>$12.8k</td>
             <td style="padding-right:1%">287</td>
             <td style="padding-right:2%">233</td>
             <td style="padding-right:2%">67</td>
@@ -248,6 +271,7 @@
 
         <tr>
             <td>University of Kansas</td>
+            <td>$11.3k</td>
             <td style="padding-right:1%">613</td>
             <td style="padding-right:2%">213</td>
             <td style="padding-right:2%">178</td>
@@ -264,6 +288,7 @@
 
         <tr>
             <td>University of Massachusetts-Amherst</td>
+            <td>$13.3k</td>
             <td style="padding-right:1%">504</td>
             <td style="padding-right:2%">230</td>
             <td style="padding-right:2%">50</td>
@@ -280,6 +305,7 @@
 
         <tr>
             <td>University of Nebraska-Lincoln</td>
+            <td>$12.9k</td>
             <td style="padding-right:1%">646</td>
             <td style="padding-right:2%">104</td>
             <td style="padding-right:2%">125</td>
@@ -296,6 +322,7 @@
 
         <tr>
             <td>University of Pittsburgh</td>
+            <td>$5.7k</td>
             <td style="padding-right:1%">559</td>
             <td style="padding-right:2%">210</td>
             <td style="padding-right:2%">137</td>
@@ -312,6 +339,7 @@
 
         <tr>
             <td>University of South Carolina-Columbia</td>
+            <td>$6.7k</td>
             <td style="padding-right:1%">676</td>
             <td style="padding-right:2%">328</td>
             <td style="padding-right:2%">241</td>
@@ -328,4 +356,7 @@
 
     </tbody>
 </table>
+
+<p><b style="color:#444;">Note:</b> Funding is defined as the amount of state revenue (sum of state appropriations, operating grants and contracts, and non-operating grants) per full-time equivalent undergraduate student. This number is not displayed for Rutgers University because its financial data is not available separately for the New Brunswick campus, but is reported for all three Rutgers campuses combined.</p>
+
 </body>

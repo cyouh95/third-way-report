@@ -122,9 +122,9 @@ In the text below, we present findings from our research, which collected data o
 
 Table 3 shows the number of recruiting visits by event type, such as public high school or private high school, and whether the visit was in-state or out-of-state for the 15 public research universities in our sample. Across all universities, the majority of visits are to public high schools. However, the most dramatic result is that most universities made more out-of-state than in-state visits--a principal that runs counter to the stated missions of large, state-based university systems. Seven universities made _more than twice_ as many out-of-state than in-state visits. And, when compared to in-state visits, a disproportionate number of these out-of-state visits were to private high schools. ^[More details on the proportional vs. actual number of visits to out-of-state private high schools compared to public high schools can be found <a href="https://emraresearch.org/sites/default/files/2019-03/joyce_report.pdf#page=34" target="_blank">here</a>.] In addition, we find that recruiting patterns are often tied to state funding, with universities that had the lowest state funding turning to out-of-state recruiting efforts as a way to generate greater revenue from tuition. 
 
-###### Table 3: Number of events by type and in-state vs. out-of-state
+###### Table 3: State funding and number of events by type, in-state vs. out-of-state
 
-<iframe src="./assets/tables/event_count.html" width="955" height="440" class="tableau offset"></iframe>
+<iframe src="./assets/tables/event_count.html" width="955" height="500" class="tableau offset"></iframe>
 
 On the other hand, universities that received more state funding tended to have more complete coverage of their home state. For example, North Carolina State University made about twice as many in-state visits than out-of-state visits. Several universities in our sample also made a substantial number of visits to community colleges in their state. 
 
