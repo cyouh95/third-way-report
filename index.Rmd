@@ -1,5 +1,5 @@
 ---
-title: "Follow the Money: The Recruiting Behavior and Enrollment Priorities of Public Research Universities"
+title: "Follow the Money: Recruiting and the Enrollment Priorities of Public Research Universities"
 urlcolor: blue
 output: 
   html_document:
@@ -249,9 +249,36 @@ STUFF NOT CURRENTLY IN POLICY IMPLICATIONS
 - innovative research on access rather than degree completion?
 -->
 
-Our research suggests that policy debates about college access must be reframed from a focus on student deficiencies towards a focus on university enrollment priorities. Mainstream policy debates highlight the "achievement gap" and "under-matching" -- high-achieving students do not apply to selective colleges -- as primary causes of racial and socioeconomic inequality in college access. These explanations point to deficiencies of students and K-12 schools and, in turn, motivate policy interventions that attempt to fix students. However, if university enrollment priorities are biased, then fixing student achievement and student decision-making alone will fail to fix college access. 
+Our research suggests that policy debates about college access must be reframed from a focus on student deficiencies towards a focus on university enrollment priorities. 
 
-Using recruiting behavior as an indicator of university enrollment priorities, our results indicate socioeconomic and racial bias in the enrollment priorities of many public research universities. The majority of public research universities in our analysis sample made far more out-of-state recruiting visits than in-state recruiting visits.  Out-of-state recruiting visits were concentrated in affluent, predominantly white public and private schools. This income and racial bias persisted even after controlling for school size and academic achievement.
+Mainstream policy debates highlight the "achievement gap" and "under-matching" -- high-achieving students who do not apply to selective colleges -- as causes of racial and socioeconomic inequality in college access. These explanations point to deficiencies of students and K-12 schools, motivating policy interventions that attempt to "fix" students, while absolving institutions of their responsibility to provide equal access. However, if university enrollment priorities are biased, then improving student achievement and student decision-making will not overcome access inequality. Therefore, policy debates about college access should consider university enrollment priorities and how policies can change these priorities.
+
+Using recruiting behavior as an indicator of enrollment priorities, our analyses suggest that the enrollment priorities of many public research universities exhibit socioeconomic and/or racial bias.  The majority of public research universities in our analysis sample made far more out-of-state recruiting visits than in-state recruiting visits.  Out-of-state recruiting visits were concentrated in affluent, predominantly white public and private schools, and regression analyses find strong evidence of income and racial bias even after controlling for school size and academic achievement.  These findings are consistent with analyses of institutional grant aid, which find that a growing number of public flagship universities have developed "merit" aid programs that specifically target affluent, out-of-state prospects with mediocre academic achievement [CITE].
+
+
+<!--
+BELOW PARAGRAPH SPEAKS TO THIS COMMENT FROM TAMARA
+
+Can we add in a very clear paragraph explaining exactly what this means for students? You mention earlier that this pushes students into community colleges, which have worse outcomes. Spelling that out and how inequitable access on the front end only exacerbates inequitable access on the back end is important.
+
+-->
+
+
+
+Collectively, a growing body of research finds that many state flagship universities expend more resources pursuing rich, middling, out-of-state students than they expend on high-achieving, low-income state residents. This trend contradicts any reasonable conception of "meritocracy." More importantly, prioritizing access for affluent students over meritorious students has profound consequences for student outcomes because degree completion is subtantially a function of access [CITES?]. When high-achieving, low-income students feel unwanted by their state flagship, they often attend community colleges. Research unoquivocally finds that starting at a community college rather than a public university dramatically reduces the probability of obtaining a BA, increases the time to degree, and lowers lifetime earnings [TRUE?]. Therefore, a public university system that prioritizes paying customers fails to help talented people reach their full potential.
+IMAGINE ALL THE WOULD-BE INVENTORS WHO NEVER GET TO INVENT; SOMETHING SAPPY LIKE THAT.
+
+
+prioritizing access for rich, middling, out-of-state students rather than 
+focused on enrolling rich, out-of-state students, regardless
+
+
+The finding that state flagship universities are concentrating recruiting and financial aid resources towards 
+
+
+
+
+
 
 <!--
 Mainstream policy debates identify the "achievement gap," "under-matching" -- when high achieving students fail to apply to selective colleges -- and inability to pay as primary causes of racial and socioeconomic inequality in college access.  These explanations highlight the deficiences of students, households, and k-12 schools and -- using the language of economists -- can all be described as "demand side" factors. In turn, policy solutons focus on fixing students, emphasizing interventions that increase achievement and interventions that reduce under-match by giving students better information and guidance about college options.  If universities are biased against low-income students or communities of color, then fixing student achievement and student decision-making will not overcome access inequality. 

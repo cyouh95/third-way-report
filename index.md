@@ -1,5 +1,5 @@
 ---
-title: "Follow the Money: The Recruiting Behavior and Enrollment Priorities of Public Research Universities"
+title: "Follow the Money: Recruiting and the Enrollment Priorities of Public Research Universities"
 urlcolor: blue
 output: 
   html_document:
