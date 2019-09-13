@@ -2,6 +2,8 @@
 title: "Follow the Money: Recruiting and the Enrollment Priorities of Public Research Universities"
 urlcolor: blue
 output: 
+  #word_document:
+    #reference_docx: word-styles-reference.docx
   html_document:
     self_contained: false  # so fetching font would work https://github.com/rstudio/rmarkdown/issues/419
     includes:
@@ -18,6 +20,7 @@ output:
     theme: null # theme specifies the Bootstrap theme to use for the page. Valid themes include default, cerulean, journal, flatly, readable, spacelab, united, cosmo, lumen, paper, sandstone, simplex, and yeti.
     df_print: tibble #options: default, tibble, paged
     keep_md: true # may be helpful for storing on github
+
 bibliography: third-way-bib.bib
 csl: apa.csl    
 ---
@@ -65,7 +68,7 @@ STUFF NOT CURRENTLY IN POLICY IMPLICATIONS
 The broader enrollment management industry consists of professionals working within universities (e.g., admissions counselors), the associations enrollment management professionals belong to (e.g., National Association for College Admission Counseling), and the marketing/enrollment management consultancies universities hire (e.g., Hobsons, Ruffalo Noel Levitz).
 -->
 
-The "iron triangle" of enrollment management states that universities care about the three broad enrollment goals: access, academic prestige, and tuition revenue. Because resources are scarce, the imagery of the iron triangle suggests that pursuing one goal involves trade-offs with the others. Growing preoccupation with rankings incentivizes universities to prioritize the academic prestige goal, while state disinvestment incentivizes universities to prioritize the tuition revenue goal and discourages universities from enrolling large numbers of low-income students. Consistent with this idea, average state funding at public research universities declined from \$232 million in 2007-08 to \$158 million in 2016-17. Over the same time period, average net tuition revenue increased from \$225 million to \$493 million.
+The "iron triangle" of enrollment management states that universities care about the three broad enrollment goals: access, academic quality, and tuition revenue. [DEFINE THESE? LA LA] Because resources are scarce, the imagery of the iron triangle suggests that pursuing one goal involves trade-offs with the others. Growing preoccupation with rankings incentivizes universities to prioritize the academic prestige goal, while state disinvestment incentivizes universities to prioritize the tuition revenue goal and discourages universities from enrolling large numbers of low-income students. Consistent with this idea, average state funding at public research universities declined from \$232 million in 2007-08 to \$158 million in 2016-17.^[Author calculations based on the Integrated Postsecondary Education Data System (IPEDS) Finance survey component] Over the same time period, average net tuition revenue increased from \$225 million to \$493 million.
 
 Empirical research shows that public research universities responded to declining state appropriations by dramatically increasing nonresident enrollment.<sup>6</sup> Since these nonresident students tended to be more affluent and were less likely to be black or Latinx than resident students, growth in the share of nonresident students was associated with declines in the share of Pell Grant recipients and black/Latinx students at public research universities. At prestigious public research universities like the University of Michigan and the University of California-Berkeley, nonresident enrollment growth was found to have a negative causal effect on enrollment opportunities for resident students. While prestigious public research universities enjoy strong demand from high-achieving out-of-state students, the majority of public research universities, like the University of Arizona, have demand from out-of-state students who cannot gain admission to their own state flagship. As a result, research shows that many less prestigious public flagship universities have adopted institutional "merit aid" programs specifically designed to target out-of-state students with mediocre academic achievement.
 
