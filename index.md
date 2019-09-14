@@ -109,7 +109,15 @@ e.g.      |
      2017 |                   63                    63                    63           313,662,710           501,088,909
 ------------------------------------------------------------------------------------------------------------------------
 
-
+select endyear, count(*), count(statea), count(tuition), avg(statea), avg(tuition)
+from carnegie_classification cc
+left join meta_univ_data mud on mud.unitid = cc.univ_id
+where control = '1'  -- public institutions
+and classification_2005 = '15'  -- highest ranking
+and school_type != '6'  -- excludes a grad school
+and endyear between '2002' and '2017'
+group by endyear
+;
 -->
 
 #### Creating the Out-of-State University
@@ -182,7 +190,9 @@ Figure 2 shows the average median household income in zip codes of visited publi
 
 ###### Figure 2: Average median household income of visited vs not visited public high schools
 
-<iframe src="./assets/graphs/third_way_income.html" width="750" height="950" class="tableau offset"></iframe>
+<div style="height:950px">
+  <iframe src="./assets/graphs/third_way_income.html" width="955" height="950" class="tableau offset" style="width:680px;float:right;"></iframe>
+</div>
 
 
 To hone in even further on how public institutions target their out-of-state recruitment efforts on more affluent students, Figure 3 shows an illustrative example of the University of Pittsburgh’s efforts to recruit students in the Chicago metropolitan area--a prime target for recruiting students given its close geographic proximity. The interactive map shows the visited and non-visited public high schools by the University of Pittsburgh, with each zip code in the Chicago metropolitan area shaded according to median household income. The blue circle markers indicate the location of a public high school, and filled circle markers indicate that the high school is visited by the University of Pittsburgh. As you can see, visited schools are largely concentrated in the more affluent communities located in the northeastern region of the metropolitan area, while schools near the outer edges of the metro area with lower median household incomes did not receive a visit.
@@ -203,7 +213,9 @@ Figure 4 shows the average racial compositions of visited high schools compared 
 
 ###### Figure 4: Average racial composition of visited vs not visited high schools by in-state, out-of-state
 
-<iframe src="./assets/graphs/third_way_race.html" width="750" height="1050" class="tableau offset"></iframe>
+<div style="height:1050px">
+  <iframe src="./assets/graphs/third_way_race.html" width="955" height="1050" class="tableau offset" style="width:800px;float:right;"></iframe>
+</div>
 
 
 Figure 5 again shows a map of visited and non-visited public high schools by the University of Pittsburgh in the Chicago metropolitan area. Each zip code is shaded according to the proportion of people who identify as black, Latinx, or Native American. The majority of visited high schools are concentrated in the northern part of the metro area, where there is a low proportion of black, Latinx, and Native American students. Communities of color are located primarily near the southeastern part of the region, and these public high schools received very few visits. 
