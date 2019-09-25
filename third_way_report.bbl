@@ -53,32 +53,6 @@ Alon, S.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Armstrong%
-\ \BBA {} Hamilton%
-}{%
-Armstrong%
-\ \BBA {} Hamilton%
-}{%
-{\protect \APACyear {2013}}%
-}]{%
-RN4231}
-\APACinsertmetastar {%
-RN4231}%
-\begin{APACrefauthors}%
-Armstrong, E\BPBI A.%
-\BCBT {}\ \BBA {} Hamilton, L\BPBI T.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYear{2013}.
-\newblock
-\APACrefbtitle {Paying for the party: how college maintains inequality} {Paying
-  for the party: how college maintains inequality}.
-\newblock
-\APACaddressPublisher{Cambridge, Massachusetts}{Harvard University Press}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Burd%
 }{%
 Burd%
@@ -219,37 +193,6 @@ Doyle%
 }{%
 Doyle%
 }{%
-{\protect \APACyear {2009}}%
-}]{%
-RN4284}
-\APACinsertmetastar {%
-RN4284}%
-\begin{APACrefauthors}%
-Doyle, W\BPBI R.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2009}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {The effect of community college enrollment on bachelor's
-  degree completion} {The effect of community college enrollment on bachelor's
-  degree completion}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Economics of Education Review}{28}{2}{199-206}.
-\newblock
-\begin{APACrefURL}
-  \url{http://www.sciencedirect.com/science/article/pii/S0272775708000770}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{https://doi.org/10.1016/j.econedurev.2008.01.006}
-  \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Doyle%
-}{%
-Doyle%
-}{%
 {\protect \APACyear {2010}}%
 }]{%
 RN2241}
@@ -294,34 +237,6 @@ Dupaul, S.%
   education}{\BBCQ}\ [Journal Article].
 \newblock
 \APACjournalVolNumPages{Journal of College Admission}{}{Spring 2012}{8-16}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Ehrenberg%
-\ \BBA {} Zhang%
-}{%
-Ehrenberg%
-\ \BBA {} Zhang%
-}{%
-{\protect \APACyear {2005}}%
-}]{%
-RN4189}
-\APACinsertmetastar {%
-RN4189}%
-\begin{APACrefauthors}%
-Ehrenberg, R\BPBI G.%
-\BCBT {}\ \BBA {} Zhang, L.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2005}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Do tenured and tenure-track faculty matter?} {Do tenured
-  and tenure-track faculty matter?}{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Human Resources}{40}{3}{647-659}.
-\newblock
-\begin{APACrefURL} \url{<Go to ISI>://WOS:000231057500005} \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -874,66 +789,6 @@ Posselt, J\BPBI R.%
 \newblock
 \APACjournalVolNumPages{American Educational Research
   Journal}{49}{6}{1074-1111}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Reynolds%
-}{%
-Reynolds%
-}{%
-{\protect \APACyear {2012}}%
-}]{%
-RN4292}
-\APACinsertmetastar {%
-RN4292}%
-\begin{APACrefauthors}%
-Reynolds, C\BPBI L.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2012}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Where to attend? Estimating the effects of beginning
-  college at a two-year institution} {Where to attend? estimating the effects
-  of beginning college at a two-year institution}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Economics of Education Review}{31}{4}{345-362}.
-\newblock
-\begin{APACrefURL}
-  \url{http://www.sciencedirect.com/science/article/pii/S0272775711001774}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{https://doi.org/10.1016/j.econedurev.2011.12.001}
-  \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Rouse%
-}{%
-Rouse%
-}{%
-{\protect \APACyear {1995}}%
-}]{%
-RN4405}
-\APACinsertmetastar {%
-RN4405}%
-\begin{APACrefauthors}%
-Rouse, C\BPBI E.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1995}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Democratization or diversion? The effect of community
-  colleges on educational attainment} {Democratization or diversion? the effect
-  of community colleges on educational attainment}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Business \& Economic
-  Statistics}{13}{2}{217-224}.
-\newblock
-\begin{APACrefURL} \url{http://www.jstor.org/stable/1392376} \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.2307/1392376} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
