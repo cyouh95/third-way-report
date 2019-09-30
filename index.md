@@ -3,6 +3,8 @@ title: 'Follow the Money: Recruiting and the Enrollment Priorities of Public Res
   Universities'
 csl: mla.csl
 output:
+  #word_document:
+  #  reference_docx: styles.docx
   html_document:
     css: assets/css/style.css
     df_print: tibble
@@ -16,8 +18,6 @@ output:
     theme: null
     toc: no
     toc_depth: 2
-  word_document:
-    reference_docx: styles.docx
 bibliography: third-way-bib.bib
 urlcolor: blue
 ---
@@ -33,24 +33,46 @@ urlcolor: blue
 [DEVELOP SNAPPIER LEDE; MAYBE AROUND ADMISSIONS SCANDAL?]
 -->
 
+<!--
+previous P1
 Historically, the mission of public research universities has been to provide opportunity and social mobility for state residents who cannot afford tuition at elite private colleges and universities. Yet today these institutions are increasingly unrepresentative of the socioeconomic and racial diversity of the states they serve---in large part because they enroll a large and growing share of affluent out-of-state students.
+-->
 
-Policy debates often attribute this access inequality to the academic achievement gap between low-income and affluent students.[@RN4016] However, Table 1 below shows that there is actually an abundance of students from lower socioeconomic quintiles who are well-qualified for admission into competitive universities. Yet unfortunately, Table 2 shows that these high-achieving, low-income students are much more likely than their affluent peers to attend community college instead. Policymakers refer to this phenomenon as "under-matching"---the idea that high-achieving, low-income students do not apply to selective institutions because they lack the proper information and guidance from their family and high school.[@RN3699] But a recent experimental evaluation by the College Board found that interventions providing these students with more information about their college options and the application process showed no effect on their enrollment in selective institutions, suggesting that student behavior and inadequate transparency around options may not be the only reason for access inequality.[@RN4468]
+<!--
+CUT TEXT FROM VARSITY BLUES LEDE
+The "Varsity Blues" admissions scandal captured national attention by showing how a handul of rich and famous bribed their way into selective colleges through the back door of the athletics department. 
 
-An alternative explanation is that the enrollment priorities of public research universities may be biased against low-income students and/or students of color. If so, fixing student achievement and college application decisions will ultimately fail to overcome the access inequality. Most college access policies focus on changing student behavior because policymakers typically know little about university enrollment priorities and therefore treat universities as passive recipients of applications. In reality, however, universities are extremely purposeful about which students they enroll and spend substantial resources identifying and pursuing desired prospects, which is why we make the case that knowing which student populations are targeted by university recruiting efforts is a credible indicator of their enrollment priorities. 
+The "Varsity Blues" admissions scandal captured national attention by showing how the rich and famous bribed their way into selective colleges through the back door of the athletics department. Although this scandal captured national attention, it involved a tiny number of applicants and 
 
-This report analyzes university recruiting behavior in order to assess the extent to which university enrollment priorities contribute to access inequality. We begin by providing background information about the enrollment management industry and how universities go about recruiting desired prospects. Next, we present results from a study highlighting how most public research universities make far more out-of-state visits than in-state visits and that these out-of-state visits focus on affluent, predominantly white high schools. Finally, we discuss the policy implications of these findings, emphasizing the relationship between public funding for higher education and the enrollment priorities of public universities. Reports showing that universities stack the deck for rich kids are a dime a dozen. We explain why universities behave this way and we begin a discussion about what can be done to change it.
+The more troubling scandal is how university admissions offices systematically target and prioritize rich students while publicly proclaiming their commitment to equality of opportunity.  
+
+
+
+
+However, college access is rigged for affluent families in much 
+-->
+
+
+The "Varsity Blues" admissions scandal captured national attention by showing how the rich and famous utilized the back-dor of the athletics department to bribed their way into selective univerisities. Varsity Blues involved only a handful of applicants and admissions offices kept their hands clean. The more troubling scandal is how universities publicly proclaim their commitment to equality of opportunity while simultaneously directing the admissions office to systematically prioritize rich students.  This preference for wealth, independent of merit, contradicts mainstream policy discourse about socioeconomic and racial inequality in college access.
+
+Mainstream policy discussions often attribute access inequality to the academic achievement gap between low-income and affluent students.[@RN4016] However, Table  1 below shows that there is actually an abundance of students from lower socioeconomic quintiles who are well-qualified for admission into competitive universities. Yet unfortunately, Table  2 shows that these high-achieving, low-income students are much more likely than their affluent peers to attend community college instead. Policymakers refer to this phenomenon as "under-matching," the idea that high-achieving, low-income students do not apply to selective institutions because they are unaware that selective institutions would admit them and provide generouds financial aid packages.[@RN3699] However, a recent evaluation by the College Board--in which 785,000 high-achieving low- and middle-income students were randomly assigned additional information about their college choice and financial aid opportunities--found no effect on the probability of enrolling in a selective institution.[@RN4468] These results compliment a growing research base, which suggests that student achievement and student decisions about where to apply are not the dominant explanations for access inequality
+
+An alternative explanation is that university enrollment priorities may be biased against low-income students and/or students of color. If so, fixing student achievement and college application decisions will ultimately fail to overcome the access inequality. Most college access policies focus on changing student behavior because policymakers typically know little about university enrollment priorities and therefore treat universities as passive recipients of applications. In reality, however, universities are extremely purposeful about which students they enroll and spend substantial resources identifying and pursuing desired prospects. Therefore, we argue that knowing which student populations are targeted by university recruiting efforts is a credible indicator of their enrollment priorities. 
+
+This report analyzes the recruiting behavior of public research universities in order to assess the extent to which university enrollment priorities contribute to access inequality.  We focus on public research universities because these institutions were founded with the mission of providing opportunity and social mobility for state residents who cannot afford tuition at elite private colleges and universities.[@RN2269] Unfortunately, these institutions are increasingly unrepresentative of the socioeconomic and racial diversity of the states they serve---in large part because they enroll a large and growing share of affluent out-of-state students.
+
+We begin by providing background information about the enrollment management industry and how universities go about recruiting desired prospects. Next, we present results from a study highlighting how most public research universities make far more out-of-state visits than in-state visits and that these out-of-state visits focus on affluent, predominantly white high schools. Finally, we discuss the policy implications of these findings, emphasizing the relationship between public funding for higher education and the enrollment priorities of public universities. Reports showing that universities stack the deck for rich kids are a dime a dozen. We explain why universities behave this way and we begin a discussion about what can be done to change it.
 
 <!--
 Revitalizing the social mobility mission of public flagship universities is essential because these institutions are designated the unique responsibility of transforming raw talent into the future civic, professional, and business leaders of the state. When public research universities systematically ignore high-achieving, low-income state residents, these students are often funneled into community colleges. Research resoundingly finds that this has a dramatic negative effect on the probability of obtaining a bachelor's degree,[@RN4284; @RN2261; @RN4292; @RN4405] with the most recent analyses finding that starting at a community college rather than a 4-year university reduces the probability of attaining a BA by 18 percentage points, from a 50\% probability to 32\% probability.[@RN4469]
 -->
 
 
-###### Table 1: Number of high-achieving students by socioeconomic quintile
+###### Table  1: Number of high-achieving students by socioeconomic quintile
 
 <iframe src="./assets/tables/hsls_tbl1.html" width="955" height="180" class="tableau offset"></iframe>
 
-###### Table 2: Initial post-secondary destination of high-achieving students by socioeconomic quintile
+###### Table  2: Initial post-secondary destination of high-achieving students by socioeconomic quintile
 
 <iframe src="./assets/tables/hsls_tbl2.html" width="955" height="240" class="tableau offset"></iframe>
 
@@ -69,12 +91,12 @@ STUFF NOT CURRENTLY IN POLICY IMPLICATIONS
 The broader enrollment management industry consists of professionals working within universities (e.g., admissions counselors), the associations enrollment management professionals belong to (e.g., National Association for College Admission Counseling), and the marketing/enrollment management consultancies universities hire (e.g., Hobsons, Ruffalo Noel Levitz).
 -->
 
-###### Figure 1: Iron triangle of enrollment management
+###### Figure  1: Iron triangle of enrollment management
 <img src="./assets/images/iron_triangle.png" alt="iron_triangle"/>
 
-Figure 1 displays the "iron triangle" of enrollment management, which depicts the maxim that universities care about three broad enrollment goals: access, academic prestige, and tuition revenue. For public universities, the "access" goal refers to access for state residents and access for underserved student populations, such as first-generation, underrepresented students of color. Across sectors, "academic prestige" often refers in practice to the annual _U.S. News and World Report_ college rankings. Because resources are scarce, the imagery of the iron triangle suggests that pursuing one goal involves trade-offs with the others. Growing preoccupation with rankings incentivizes universities to prioritize the academic prestige goal, while state disinvestment incentivizes universities to prioritize the   tuition revenue goal and discourages universities from enrolling large numbers of low-income students. Consistent with this idea, average state funding at the 63 public research-extensive universities as defined by the 2005 Carnegie Classification declined from \$387 million in 2001-02 to \$280 million in 2012-13, recovering only to \$314 million by 2016-17 despite several years of economic growth.[@NOTE1] By contrast, average net tuition revenue at these institutions increased from \$213 million in 2001-02 to \$501 million in 2016-17.
+Figure  1 displays the "iron triangle" of enrollment management, which depicts the maxim that universities care about three broad enrollment goals: access, academic prestige, and tuition revenue. For public universities, the "access" goal refers to access for state residents and access for underserved student populations, such as first-generation, underrepresented students of color. Across sectors, "academic prestige" often refers in practice to the annual _U.S. News and World Report_ college rankings. Because resources are scarce, the imagery of the iron triangle suggests that pursuing one goal involves trade-offs with the others. Growing preoccupation with rankings incentivizes universities to prioritize the academic prestige goal, while state disinvestment incentivizes universities to prioritize the   tuition revenue goal and discourages universities from enrolling large numbers of low-income students. Consistent with this idea, average state funding at the 63 public research-extensive universities as defined by the 2005 Carnegie Classification declined from \$387 million in 2001-02 to \$280 million in 2012-13, recovering only to \$314 million by 2016-17 despite several years of economic growth.[@NOTE1] By contrast, average net tuition revenue at these institutions increased from \$213 million in 2001-02 to \$501 million in 2016-17.
 
-###### Figure 2: Average state and tuition revenue of public research-extensive universities, 2001-02 through 2016-17
+###### Figure  2: Average state and tuition revenue of public research-extensive universities, 2001-02 through 2016-17
 <img src="./assets/graphs/revenue_graph.png" alt="revenue_graph"/>
 
 <!--
@@ -137,9 +159,9 @@ In response to these trends, legislators in several states including California 
 
 #### The Enrollment Funnel
 
-Figure 3 depicts the enrollment funnel, a conceptual tool used by the EM industry to describe stages in the student recruitment process that inform targeted recruiting interventions. The vast majority of research on enrollment management focuses on the final stages of the enrollment funnel, specifically which applicants are admitted[@RN3536; @RN3544; @RN3523; @RN4131] and the use of financial aid "leveraging" to convert admits to enrollees.[@RN2241; @RN3564; @RN1948] By contrast, the enrollment management industry expends substantial resources on _earlier_ stages in the funnel, including on "prospects" who represent "all the potential students you would want to attract to your institution,"[@RN4322] and "inquiries," or the prospects that contact the university, including those who respond to university solicitations like emails and brochures and those who reach out on their own by taking actions such as sending SAT/ACT scores to a university or completing a form on the admissions website.
+Figure  3 depicts the enrollment funnel, a conceptual tool used by the EM industry to describe stages in the student recruitment process that inform targeted recruiting interventions. The vast majority of research on enrollment management focuses on the final stages of the enrollment funnel, specifically which applicants are admitted[@RN3536; @RN3544; @RN3523; @RN4131] and the use of financial aid "leveraging" to convert admits to enrollees.[@RN2241; @RN3564; @RN1948] By contrast, the enrollment management industry expends substantial resources on _earlier_ stages in the funnel, including on "prospects" who represent "all the potential students you would want to attract to your institution,"[@RN4322] and "inquiries," or the prospects that contact the university, including those who respond to university solicitations like emails and brochures and those who reach out on their own by taking actions such as sending SAT/ACT scores to a university or completing a form on the admissions website.
 
-###### Figure 3: Enrollment management funnel
+###### Figure  3: Enrollment management funnel
 <img src="./assets/images/enrollment_funnel.png" alt="enrollment_funnel"/>
 
 
@@ -181,31 +203,31 @@ In the text below, we present findings from our research, which collected data o
 
 #### Follow the Money
 
-Table 3 shows the number of recruiting visits by event type, such as public high school or private high school, and whether the visit was in-state or out-of-state for the 15 public research universities in our sample. Across all of the universities, the majority of visits were to public high schools. However, our most dramatic finding is that most universities made more out-of-state than in-state visits---a principle that runs counter to the stated missions of large, state-based university systems. Seven universities made _more than twice_ as many out-of-state than in-state visits. And, when compared to in-state visits, a disproportionate number of these out-of-state visits were to private high schools.[@NOTE5] 
+Table  3 shows the number of recruiting visits by event type, such as public high school or private high school, and whether the visit was in-state or out-of-state for the 15 public research universities in our sample. Across all of the universities, the majority of visits were to public high schools. However, our most dramatic finding is that most universities made more out-of-state than in-state visits---a principle that runs counter to the stated missions of large, state-based university systems. Seven universities made _more than twice_ as many out-of-state than in-state visits. And, when compared to in-state visits, a disproportionate number of these out-of-state visits were to private high schools.[@NOTE5] 
 
-In addition, we find that recruiting patterns are often tied to state funding, with universities that had the lowest state funding turning to out-of-state recruiting efforts as a way to generate greater revenue from tuition. As seen in Table 3, the University of Alabama, which has experienced state disinvestment from higher education, made significantly more out-of-state visits than in-state visits. On the other hand, universities that received more state funding tended to have more complete coverage of their home state. For example, North Carolina State University made about twice as many in-state visits than out-of-state visits. Several universities in our sample also made a substantial number of visits to community colleges in their state. 
+In addition, we find that recruiting patterns are often tied to state funding, with universities that had the lowest state funding turning to out-of-state recruiting efforts as a way to generate greater revenue from tuition. As seen in Table  3, the University of Alabama, which experienced significant declines in state appropriations following the 2008 recession, made significantly more out-of-state visits than in-state visits. On the other hand, universities that received more state funding tended to have more complete coverage of their home state. For example, North Carolina State University made about twice as many in-state visits than out-of-state visits. Several universities in our sample also made a substantial number of visits to community colleges in their state. 
 
 
-###### Table 3: State funding and number of events by type, in-state vs. out-of-state
+###### Table  3: State funding and number of events by type, in-state vs. out-of-state
 
 <iframe src="./assets/tables/event_count.html" width="955" height="500" class="tableau offset"></iframe>
 
 
 ##### Trends in Median Income of Visited High Schools
 
-Figure 4 shows the average median household income in zip codes of visited public high schools compared to non-visited public high schools for in-state and out-of-state visits. We see that out-of-state visits are heavily focused on affluent communities across all the universities in our sample. For example, the University of Massachusetts-Amherst visited out-of-state public high schools in zip codes where the average median household income was \$115,000 while the average income for non-visited schools was \$64,000, resulting in a \$51,000 gap. The average income disparity between visited and non-visited out-of-state public high schools across all institutions in our sample is around \$40,000, suggesting that universities prioritize recruiting students from wealthier communities. In fact, we find that affluent out-of-state schools are significantly more likely to receive a visit even after using regression models that control for factors such as academic achievement and school size.[@NOTE6]
+Figure  4 shows the average median household income in zip codes of visited public high schools compared to non-visited public high schools for in-state and out-of-state visits. We see that out-of-state visits are heavily focused on affluent communities across all the universities in our sample. For example, the University of Massachusetts-Amherst visited out-of-state public high schools in zip codes where the average median household income was \$115,000 while the average income for non-visited schools was \$64,000, resulting in a \$51,000 gap. The average income disparity between visited and non-visited out-of-state public high schools across all institutions in our sample is around \$40,000, suggesting that universities prioritize recruiting students from wealthier communities. In fact, we find that affluent out-of-state schools are significantly more likely to receive a visit even after using regression models that control for factors such as academic achievement and school size.[@NOTE6]
 
-###### Figure 4: Average median household income of visited vs. non-visited public high schools
+###### Figure  4: Average median household income of visited vs. non-visited public high schools
 
 <div style="height:950px">
   <iframe src="./assets/graphs/third_way_income.html" width="955" height="950" class="tableau offset" style="width:680px;float:right;"></iframe>
 </div>
 
 
-To hone in even further on how public institutions target their out-of-state recruitment efforts on more affluent students, Figure 5 shows an illustrative example of the University of Pittsburgh’s efforts to recruit students in the Chicago metropolitan area---a prime target for recruiting students given its close geographic proximity. The map shows the visited and non-visited public high schools by the University of Pittsburgh, with each zip code in the Chicago metropolitan area shaded according to median household income. The blue circle markers indicate the location of a public high school, and filled circle markers indicate that the high school is visited by the University of Pittsburgh. As you can see, visited schools are largely concentrated in the more affluent communities located in the northeastern region of the metropolitan area, while schools near the outer edges of the metro area with lower median household incomes are far less likely to receive a visit.
+To hone in even further on how public institutions target their out-of-state recruitment efforts on more affluent students, Figure  5 shows an illustrative example of the University of Pittsburgh’s efforts to recruit students in the Chicago metropolitan area---a prime target for recruiting students given its close geographic proximity. The map shows the visited and non-visited public high schools by the University of Pittsburgh, with each zip code in the Chicago metropolitan area shaded according to median household income. The blue circle markers indicate the location of a public high school, and filled circle markers indicate that the high school is visited by the University of Pittsburgh. As you can see, visited schools are largely concentrated in the more affluent communities located in the northeastern region of the metropolitan area, while schools near the outer edges of the metro area with lower median household incomes are far less likely to receive a visit.
 
 
-###### Figure 5: Visits to metro areas by median household income
+###### Figure  5: Visits to metro areas by median household income
 
 <iframe src="./assets/maps/map_income.html" width="955" height="700" class="tableau offset"></iframe>
 
@@ -216,25 +238,30 @@ Income bias in in-state public high school visits also exists across the majorit
 
 ##### Trends in Racial Composition of Visited High Schools
 
-Figure 6 shows the average racial compositions of visited high schools compared to non-visited high schools for in-state and out-of-state visits by the institutions in our sample. Similar to the income results, out-of-state visits to public high schools show the most evidence of racial bias. A majority of the institutions in our sample visited out-of-state public high schools with an overall higher share of white students and lower share of black, Latinx, and Native American students. For example, the University of Colorado-Boulder visited out-of-state public high schools where white students make up 56% of the combined total, as compared to 49% in non-visited high schools. At the same time, black, Latinx, and Native American students make up 7%, 20%, and less than 0.5% of visited public high school students, respectively, compared to 16%, 27%, and close to 1% of non-visited students. For most of the institutions in our sample, regression results show that the racial bias in out-of-state public high school visits persists even after controlling for other school characteristics.
+Figure  6 shows the average racial compositions of visited high schools compared to non-visited high schools for in-state and out-of-state visits by the institutions in our sample. Similar to the income results, out-of-state visits to public high schools show the most evidence of racial bias. A majority of the institutions in our sample visited out-of-state public high schools with an overall higher share of white students and lower share of black, Latinx, and Native American students. For example, the University of Colorado-Boulder visited out-of-state public high schools where white students make up 56% of the combined total, as compared to 49% in non-visited high schools. At the same time, black, Latinx, and Native American students make up 7%, 20%, and less than 0.5% of visited public high school students, respectively, compared to 16%, 27%, and close to 1% of non-visited students. For most of the institutions in our sample, regression results show that the racial bias in out-of-state public high school visits persists even after controlling for other school characteristics.
 
 
-###### Figure 6: Average racial composition of visited vs. non-visited high schools by in-state, out-of-state
+###### Figure  6: Average racial composition of visited vs. non-visited high schools by in-state, out-of-state
 
 <div style="height:1050px">
   <iframe src="./assets/graphs/third_way_race.html" width="955" height="1050" class="tableau offset" style="width:800px;float:right;"></iframe>
 </div>
 
 
-Figure 7 again shows a map of visited and non-visited public high schools by the University of Pittsburgh in the Chicago metropolitan area. Each zip code is shaded according to the proportion of residents who identify as black, Latinx, or Native American. The majority of visited high schools are concentrated in the northern part of the metro area, where there is a low proportion of black, Latinx, and Native American students. Communities of color are located primarily near the southeastern part of the region, and these public high schools received very few visits. 
+Figure  7 again shows a map of visited and non-visited public high schools by the University of Pittsburgh in the Chicago metropolitan area. Each zip code is shaded according to the proportion of residents who identify as black, Latinx, or Native American. The majority of visited high schools are concentrated in the northern part of the metro area, where there is a low proportion of black, Latinx, and Native American students. Communities of color are located primarily near the southeastern part of the region, and these public high schools received very few visits. 
 
 
-###### Figure 7: Visits to metro areas by percent black, Latinx, and Native American
+###### Figure  7: Visits to metro areas by percent black, Latinx, and Native American
 
 <iframe src="./assets/maps/map_race.html" width="955" height="700" class="tableau offset"></iframe>
 
 
-When looking at out-of-state visits to private high schools, Figure 6 shows that the racial composition of students remain relatively consistent between visited and non-visited schools. However, private high schools in general have a higher percentage of white students than public high schools, and universities tend to visit a disproportionate number of out-of-state private high schools. Therefore, the overall population of out-of-state students visited by the universities in our sample tended to be more white. 
+When looking at out-of-state visits to private high schools, Figure  6 shows that the racial composition of students remain relatively consistent between visited and non-visited schools. However, private high schools in general have a higher percentage of white students than public high schools [CITE]. Our analyes found that universities tend to visit a disproportionate number of out-of-state private high schools. Therefore, the overall population of out-of-state students visited by the universities in our sample tended to be more white [IS THIS SENTENCE REFERRING TO PRIVATE SCHOOLS ONLY OR ALL OUT-OF-STATE VISITS?]. 
+
+<!--
+CITE FOR PRIVATE SCHOOLS IS MURNANE AND REARDON 2018, ON THIRD-WAY-BIB.BIB
+-->
+
 
 In-state visits, on the other hand, show inconsistent evidence of racial bias across our sample institutions. For example, the University of Alabama visited in-state schools with a larger percentage of white students and a smaller percentage of black, Latinx, and Native American students as compared to non-visited schools in the state, whereas the University of California-Irvine visited in-state schools with a higher proportion of students of color than non-visited schools. Nevertheless, in comparison to out-of-state visits to public high schools, the difference in average racial composition between visited and non-visited students remains relatively small across all cases.
 
@@ -271,7 +298,7 @@ Can we add in a very clear paragraph explaining exactly what this means for stud
 More concretely, we rob students 
 -->
 
-When universities place more value on affluence as a merit criterion rather than academic achievement, the negative effects on students and on society are profound. High-achieving, low-income students unwanted by their state flagship often attend a nearby community college or state college. Research finds that starting at a community college reduces the likelihood of obtaining a bachelor’s degree by 18 percentage points---from a 50% probability to 32% probability[@RN4469; @RN2261]---and is correlated with longer time to degree and lower lifetime earnings. And while regional public universities fare better than community colleges on degree completion, most states assign their flagship universities the responsibility of preparing the future business, professional, and civic leaders of the state. When public flagship universities ignore poor, minority communities in their backyard, they deny local talent the opportunity to reach its full potential. 
+When universities place more value on affluence as a merit criterion rather than academic achievement, the negative effects on students and on society are profound. High-achieving, low-income students unwanted by their state flagship often attend a nearby community college or state college. Research finds that starting at a community college reduces the likelihood of obtaining a bachelor’s degree by 18 percentage points---from a 50% probability to 32% probability[@RN4469; @RN2261]---and is correlated with longer time to degree  [CITE] and lower lifetime earnings [CITE]. And while regional public universities fare better than community colleges on degree completion, most states assign their flagship universities the responsibility of preparing the future business, professional, and civic leaders of the state. When public flagship universities ignore poor, minority communities in their backyard, they deny local talent the opportunity to reach its full potential. 
 
 <!--
 The best inputs are not being sent to the place that maximizes their output. Further, when public flagships enroll great quantities of affluent nonresident students who were rejected by public universities in their own state, campus culture becomes hostile to first-generation students reaching for their full potential.[@RN4231]
