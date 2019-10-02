@@ -39,8 +39,8 @@ fig_nums(name = 'race_map', caption = 'Visits to metro areas by percent black, L
 
 tbl_nums <- captioner::captioner(prefix = 'Table')
 
-tbl_nums(name = 'hsls_tbl1', caption = 'Number of high-achieving students by socioeconomic quintile')
-tbl_nums(name = 'hsls_tbl2', caption = 'Initial post-secondary destination of high-achieving students by socioeconomic quintile')
+tbl_nums(name = 'hsls_tbl1', caption = 'Population weighted number of high-achieving students by socioeconomic quintile')
+tbl_nums(name = 'hsls_tbl2', caption = 'Population weighted initial post-secondary destination of high-achieving students by socioeconomic quintile')
 tbl_nums(name = 'event_count', caption = 'State funding and number of events by type, in-state vs. out-of-state')
 
 ```
@@ -91,11 +91,11 @@ Revitalizing the social mobility mission of public flagship universities is esse
 
 ###### `r tbl_nums('hsls_tbl1')`
 
-<iframe src="./assets/tables/hsls_tbl1.html" width="955" height="190" class="tableau offset"></iframe>
+<iframe src="./assets/tables/hsls_tbl1.html" width="955" height="180" class="tableau offset"></iframe>
 
 ###### `r tbl_nums('hsls_tbl2')`
 
-<iframe src="./assets/tables/hsls_tbl2.html" width="955" height="270" class="tableau offset"></iframe>
+<iframe src="./assets/tables/hsls_tbl2.html" width="955" height="250" class="tableau offset"></iframe>
 
 
 ## Background

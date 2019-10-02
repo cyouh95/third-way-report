@@ -68,13 +68,13 @@ Revitalizing the social mobility mission of public flagship universities is esse
 -->
 
 
-###### Table 1: Number of high-achieving students by socioeconomic quintile
+###### Table 1: Population weighted number of high-achieving students by socioeconomic quintile
 
-<iframe src="./assets/tables/hsls_tbl1.html" width="955" height="190" class="tableau offset"></iframe>
+<iframe src="./assets/tables/hsls_tbl1.html" width="955" height="180" class="tableau offset"></iframe>
 
-###### Table 2: Initial post-secondary destination of high-achieving students by socioeconomic quintile
+###### Table 2: Population weighted initial post-secondary destination of high-achieving students by socioeconomic quintile
 
-<iframe src="./assets/tables/hsls_tbl2.html" width="955" height="270" class="tableau offset"></iframe>
+<iframe src="./assets/tables/hsls_tbl2.html" width="955" height="250" class="tableau offset"></iframe>
 
 
 ## Background
