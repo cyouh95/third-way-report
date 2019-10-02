@@ -70,11 +70,11 @@ Revitalizing the social mobility mission of public flagship universities is esse
 
 ###### Table 1: Number of high-achieving students by socioeconomic quintile
 
-<iframe src="./assets/tables/hsls_tbl1.html" width="955" height="180" class="tableau offset"></iframe>
+<iframe src="./assets/tables/hsls_tbl1.html" width="955" height="190" class="tableau offset"></iframe>
 
 ###### Table 2: Initial post-secondary destination of high-achieving students by socioeconomic quintile
 
-<iframe src="./assets/tables/hsls_tbl2.html" width="955" height="240" class="tableau offset"></iframe>
+<iframe src="./assets/tables/hsls_tbl2.html" width="955" height="270" class="tableau offset"></iframe>
 
 
 ## Background
@@ -301,6 +301,8 @@ More concretely, we rob students
 When universities place more value on affluence as a merit criterion rather than academic achievement, the negative effects on students and on society are profound. High-achieving, low-income students unwanted by their state flagship often attend a nearby community college or state college. Research finds that starting at a community college reduces the likelihood of obtaining a bachelor’s degree by 18 percentage points---from a 50% probability to 32% probability[@RN4469; @RN2261]---and is correlated with longer time to degree and lower lifetime earnings. And while regional public universities fare better than community colleges on degree completion, most states assign their flagship universities the responsibility of preparing the future business, professional, and civic leaders of the state. When public flagship universities ignore poor, minority communities in their backyard, they deny local talent the opportunity to reach its full potential. 
 
 <!--
+---and is correlated with longer time to degree  [CITE] and lower lifetime earnings [CITE].
+
 The best inputs are not being sent to the place that maximizes their output. Further, when public flagships enroll great quantities of affluent nonresident students who were rejected by public universities in their own state, campus culture becomes hostile to first-generation students reaching for their full potential.[@RN4231]
 -->
 
