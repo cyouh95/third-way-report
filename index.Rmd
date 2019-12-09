@@ -3,8 +3,6 @@ title: 'Follow the Money: Recruiting and the Enrollment Priorities of Public Res
   Universities'
 csl: mla.csl
 output:
-  word_document:
-    reference_docx: styles.docx
   html_document:
     css: assets/css/style.css
     df_print: tibble
@@ -18,6 +16,8 @@ output:
     theme: null
     toc: no
     toc_depth: 2
+  word_document:
+    reference_docx: styles.docx
 bibliography: third-way-bib.bib
 urlcolor: blue
 ---
@@ -406,7 +406,7 @@ Ted Thornhill found that university admissions representatives respond less favo
 
 Racial biases in university enrollment priorities and recruiting behaviors also deserve greater scrutiny and oversight. Our research finds that public research universities were less likely to visit out-of-state schools with high non-white enrollment, even after controlling for income and academic achievement. Although state funding cuts provide a reasonable rationale for income bias, they do not explain the systematic bias against communities of color. Rather, these results may be due to institutional racism against communities of color. More broadly, a growing number of studies find that universities exhibit a preference for enrolling students of color from affluent, predominantly white public and private schools.[@RN4495; @RN4396; @RN2517; @RN4360] 
 
-Universities market to and recruit students through advertising and social media, sending them emails and brochures, visiting their schools, and responding to their questions. Racial discrimination can occur at any of these stages. Policymakers devote a substantial amount of attention to potential discrimination in the application review process, and they should apply an equal amount of scrutiny to better understanding which prospects universities target and how they do so during different stages of the enrollment process.
+Universities market to and recruit students through advertising and social media, sending them emails and brochures, visiting their schools, and responding to their questions. Racial discrimination can occur at any of these stages. Policymakers devote a substantial amount of attention to potential discrimination in the application review process, and they should apply an equal amount of scrutiny to better understand which prospects universities target and how they do so during different stages of the enrollment process.
 
 ## Conclusion
 
