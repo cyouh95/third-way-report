@@ -52,3 +52,27 @@ df2[,2:6]<-round(df2[,2:6],digits=-1)
 # 7) Export the dataframes to .RData files
 save(df1, file = 'df1.RData')
 save(df2, file = 'df2.RData')
+
+
+# 8) Check numbers match between tables
+colSums(df2[,-1], na.rm = T)
+
+
+# 9) Add % for Table 1
+for(col in names(df1)[-1]) {
+  df1[paste0(col, '_pct')] = df1[col] / sum(df1[col]) * 100
+}
+
+
+# 10) Add % for Table 2
+df3 <- df2[c(2,3,4),]
+
+# Combine 'Inclusive or selectivity not classified, 4-year institution'
+df3 <- rbind(df3, colSums(df2[c(5,6), ]))
+
+# Combine 'Selectivity not classified, 2-year or less institution'
+df3 <- rbind(df3, colSums(df2[c(7,8), ], na.rm = T))
+
+for(col in names(df3)[-1]) {
+  df3[paste0(col, '_pct')] = df3[col] / sum(df3[col]) * 100
+}
