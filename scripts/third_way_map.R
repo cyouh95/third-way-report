@@ -467,7 +467,7 @@ third_way_map <- function(univs, metros) {
               na.label="NA",
               opacity = 1) %>%
 
-    addLegend(data = uspoly@data,
+    addLegend(data = uspoly@data %>% filter(!is.na(cbsa_1)),
               position = "topright", pal = color_race, values = ~race_brks_nonwhiteasian,
               title = "Black, Latinx, and <br>Native American Population",
               className = "info legend legend-race",
