@@ -16,18 +16,6 @@ urlcolor: blue
 .level4 {
   margin-top: 20px;
 }
-
-.tab-content {
-  margin-bottom: 20px;
-}
-
-.footnote {
-  margin-left: 15px;
-  margin-top: -15px;
-  font-size: 12px;
-  color: gray;
-  font-style: italic;
-}
 </style>
 
 ## Purpose of tool
@@ -41,7 +29,6 @@ urlcolor: blue
 - An interactive, online tool to accomplish the goals identified above
 - Mobile-friendly design for easy accessibility across all platforms and devices
 - Includes an interactive map component as well as other graphical and numeric displays
-  - [Example of similar tool](https://map.emraresearch.org/)
 
 #### Universities to include
 
@@ -72,15 +59,13 @@ urlcolor: blue
   - Surveys and questionnaire results
   - External links and resources
 
-## Sample prototype {.tabset .tabset-fade .tabset-pills}
+## Examples of similar tools we have created
 
-### Map
-
+<br>
 <iframe src="./assets/maps/map_small.html" width="100%" style="border:none; height:600px;"></iframe>
 
-### Stats
+_Source: [Third Way report](https://www.thirdway.org/report/follow-the-money-recruiting-and-the-enrollment-priorities-of-public-research-universities)_
 
-<div style="height:605px;">
-  <img src="./assets/images/sample_layout.svg" width="98%" style="opacity:80%; filter:hue-rotate(20deg); pointer-events:none;" />
-  <p class="footnote">Credit: https://get.foundation/assets/img/sites-templates/f6-template-realestate.svg</p>
-</div>
+<br>
+[![](./assets/images/emra_map.png)](https://map.emraresearch.org/)
+_Source: [EMRA interactive map](https://map.emraresearch.org/)_
