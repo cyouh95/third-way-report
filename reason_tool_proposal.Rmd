@@ -1,0 +1,86 @@
+---
+title: 'Diversity and Opportunity Tracker'
+output:
+  html_document:
+    includes:
+      in_header: assets/html/header.html
+    df_print: tibble
+urlcolor: blue
+---
+
+<style>
+.level2 {
+  margin-top: 30px;
+}
+
+.level4 {
+  margin-top: 20px;
+}
+
+.tab-content {
+  margin-bottom: 20px;
+}
+
+.footnote {
+  margin-left: 15px;
+  margin-top: -15px;
+  font-size: 12px;
+  color: gray;
+  font-style: italic;
+}
+</style>
+
+## Purpose of tool
+
+- Display key information and metrics for state, university, and local-level stakeholders
+- Track current efforts toward diversity and opportunities for change and improvement
+- Serve as part of an advocacy and accountability tool
+
+## Proposed deliverable
+
+- An interactive, online tool to accomplish the goals identified above
+- Mobile-friendly design for easy accessibility across all platforms and devices
+- Includes an interactive map component as well as other graphical and numeric displays
+  - [Example of similar tool](https://map.emraresearch.org/)
+
+#### Universities to include
+
+- University of Illinois at Urbana-Champaign
+- Ohio State University
+
+#### Data to include
+
+- **Characteristics of high schools**
+  - *NCES Common Core of Data (CCD)* for public HS data
+  - *NCES Private School Universe Survey (PSS)* for private HS data
+- **Characteristics of community**
+  - *Census American Community Survey (ACS)* for state, zip code, tract-level data
+- **Access to the university**
+  - *Integrated Postsecondary Education Data System (IPEDS)* for university data
+    - Enrollment composition of university (e.g., race/SES)
+  - Access by high school or community (e.g., zip code, district)
+    - E.g., # of students from each HS/community by race/ethnicity category
+    - Can try to obtain data from state, higher ed board, or university
+- **Recruiting behavior**
+  - Off-campus recruiting events (*visited vs. nonvisited*)
+  - Student list purchases (*targeted vs. not targeted*)
+- **Digital marketing/advertising**
+  - Money spent on advertising
+  - Geographic targeting of advertising
+  - Analysis of images/text in advertising
+- **Other**
+  - Surveys and questionnaire results
+  - External links and resources
+
+## Sample prototype {.tabset .tabset-fade .tabset-pills}
+
+### Map
+
+<iframe src="./assets/maps/map_small.html" width="100%" style="border:none; height:600px;"></iframe>
+
+### Stats
+
+<div style="height:605px;">
+  <img src="./assets/images/sample_layout.svg" width="98%" style="opacity:80%; filter:hue-rotate(20deg); pointer-events:none;" />
+  <p class="footnote">Credit: https://get.foundation/assets/img/sites-templates/f6-template-realestate.svg</p>
+</div>
