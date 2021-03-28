@@ -57,7 +57,11 @@ urlcolor: blue
   - Analysis of images/text in advertising
 - **Other**
   - Surveys and questionnaire results
+    - Information about campus climate (inside and outside of the classroom)
   - External links and resources
+    - Information regarding the Diversity, Equity, and Inclusion Policies of the university
+    - Information regarding the university's partnerships and outreach to BIPOC communities
+
 
 ## Examples of similar tools we have created
 
@@ -68,4 +72,5 @@ _Source: [Third Way report](https://www.thirdway.org/report/follow-the-money-rec
 
 <br>
 [![](./assets/images/emra_map.png)](https://map.emraresearch.org/)
+
 _Source: [EMRA interactive map](https://map.emraresearch.org/)_
