@@ -252,9 +252,8 @@ third_way_map <- function(univs, metros) {
     
     msa_shape <- msapoly
     msa_shape@polygons <- list()
-    poly_ids <- names(msapoly@polygons)
-    for (idx in seq_along(poly_ids)) {
-      msa_shape@polygons[[idx]] <- msapoly@polygons[[poly_ids[idx]]]
+    for (idx in seq_along(msapoly@polygons)) {
+      msa_shape@polygons[[idx]] <- msapoly@polygons[[idx]]
     }
 
     data[[metro]]$cbsa_shape <- msa_shape
@@ -412,7 +411,15 @@ third_way_map <- function(univs, metros) {
 
     addCircleMarkers(data = data[[metro]]$cc_nonvisits, lng = ~longitude, lat = ~latitude, group = 'Non-Visited Community Colleges',
                      radius = 2, fill = TRUE, fillOpacity = 0, opacity = 1, weight = 1, color = 'green',
-                     popup = data[[metro]]$popup_ccnonvisit, options = pathOptions(className = paste0("univ-pin univ-shared-", metro)))
+                     popup = data[[metro]]$popup_ccnonvisit, options = pathOptions(className = paste0("univ-pin univ-shared-", metro))) %>%
+      
+    # add metro-specific population total legend
+    addLegend(data = data[[metro]]$cbsa_shape,
+              position = "topright", pal = data[[metro]]$color_pop, values = ~pop_total,
+              title = "Population Total",
+              className = paste0("info legend legend-pop-", metro),
+              na.label="NA",
+              opacity = 1)
 
     for (univ in univs) {
       print(univ)
@@ -453,21 +460,14 @@ third_way_map <- function(univs, metros) {
   m <- m %>% 
     
     # add legends
-    addLegend(data = data[[metro]]$cbsa_shape,
+    addLegend(data = uspoly@data,
               position = "topright", pal = color_income, values = ~inc_brks,
               title = "Median Household Income",
               className = "info legend legend-income",
               na.label="NA",
               opacity = 1) %>%
-    
-    addLegend(data = data[[metro]]$cbsa_shape,
-              position = "topright", pal = data[[metro]]$color_pop, values = ~pop_total,
-              title = "Population Total",
-              className = "info legend legend-pop",
-              na.label="NA",
-              opacity = 1) %>%
 
-    addLegend(data = data[[metro]]$cbsa_shape,
+    addLegend(data = uspoly@data,
               position = "topright", pal = color_race, values = ~race_brks_nonwhiteasian,
               title = "Black, Latinx, and <br>Native American Population",
               className = "info legend legend-race",
@@ -518,3 +518,6 @@ saveWidget(third_way_map(univs, metros), 'map_income.html', background = 'transp
 
 # uncomment reset_overlays_race();
 saveWidget(third_way_map(univs, metros), 'map_race.html', background = 'transparent')
+
+# uncomment reset_overlays_race();
+saveWidget(third_way_map(c('201885', '215293', '218663'), c('16980', '17140', '35620')), 'map_small.html', background = 'transparent')

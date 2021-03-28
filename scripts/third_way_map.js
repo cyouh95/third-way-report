@@ -121,7 +121,7 @@ function(el, x, choices) {
         $('.legend-income').css('display', 'inherit');
         break;
       case 'MSA by Population Total':
-        $('.legend-pop').css('display', 'inherit');
+        $('.legend-pop-' + active_attr.active_metro).css('display', 'inherit');
         break;
       case 'MSA by Race/Ethnicity':
         $('.legend-race').css('display', 'inherit');
