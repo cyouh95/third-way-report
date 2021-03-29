@@ -9,6 +9,12 @@ urlcolor: blue
 ---
 
 <style>
+body {
+  background: no-repeat url(http://s.ytimg.com/yt/imgbin/www-refreshbg-vflC3wnbM.png) 0 0;
+  background-color: #EBEBEB;
+  background-repeat: repeat;
+}
+
 .level2 {
   margin-top: 30px;
 }
@@ -49,8 +55,8 @@ urlcolor: blue
     - E.g., # of students from each HS/community by race/ethnicity category
     - Can try to obtain data from state, higher ed board, or university
 - **Recruiting behavior**
-  - Off-campus recruiting events (*visited vs. nonvisited*)
-  - Student list purchases (*targeted vs. not targeted*)
+  - Off-campus recruiting events (visited vs. nonvisited)
+  - Student list purchases (targeted vs. not targeted)
 - **Digital marketing/advertising**
   - Money spent on advertising
   - Geographic targeting of advertising
@@ -65,12 +71,27 @@ urlcolor: blue
 
 ## Examples of similar tools we have created
 
-<br>
+#### Third Way interactive map
+
+- Map shows recruiting events by a specific university at a specific metro area (e.g., University of Cincinnati in Chicago metro area)
+- Can select which types of events to display (public HS, private HS, community college, other)
+  - Filled in point means visited location, unfilled point means nonvisited location
+  - Click on point to view more info
+- Zip codes in the metro area are colored according to some measure (income, population total, race/ethnicity), which can be toggled
+  - Click on zip code to view more info
+
 <iframe src="./assets/maps/map_small.html" width="100%" style="border:none; height:600px;"></iframe>
 
 _Source: [Third Way report](https://www.thirdway.org/report/follow-the-money-recruiting-and-the-enrollment-priorities-of-public-research-universities)_
 
-<br>
+#### EMRA interactive map
+
+- Select university to see their off-campus recruiting events
+  - Sidebar will display both university and recruiting statistics
+- Then, can select specific location visited by the university on map (e.g., HS, community college)
+  - Sidebar will display some stats about that visited location
+  - Can further select nearby visited or nonvisited school to compare to
+
 [![](./assets/images/emra_map.png)](https://map.emraresearch.org/)
 
 _Source: [EMRA interactive map](https://map.emraresearch.org/)_
